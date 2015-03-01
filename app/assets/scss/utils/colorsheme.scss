@@ -1,0 +1,142 @@
+////////////UI//////////
+
+// Обычной кнопки
+	// Фон
+$btn_bg_default = #0ca1d2;
+	// Цвет текста
+$btn_color_default = #fff;
+	// Цвет границы
+$btn_border_default = #fff;
+
+// Кастомная кнопка #1 (Показа еще, загрузить еще)
+	// Фон
+$btn_bg_custom1 = #fff;
+	// Цвет текста
+$btn_color_custom1 = #039ed0;
+	// Цвет границы
+$btn_border_custom1 = #089fd1;
+
+// Кастомная кнопка #2 (Отправить форму)
+	// Фон
+$btn_bg_custom2 = #41d0ff;
+	// Цвет текста
+$btn_color_custom2 = #fff;
+	// Цвет границы
+$btn_border_custom2 = #fff;
+
+// Фон кнопки профиля
+$profile_btn_bg = #47b9e4;
+// Фон кнопки меню
+$settings_btn_bg = #0ca1d2;
+// Фон кнопки поиска
+$search_btn_bg = #0d2d3e;
+// Фон кнопки камеры
+$cam_btn_bg = #0d2d3e;
+// Плашка хиты продаж
+	// Фон
+$hits_bg = #7fb737;
+	// Цвет текста
+$hits_color = #fff;
+
+	// SLIDER UI
+		// Кнопки управления у слайдера
+		$slider_controls = #0ca1d2; 
+		// Кнопки индикаторы
+			// Обычное состояние
+		$slider_indicators_default = #41d0ff;
+			// Активное состояние
+		$slider_indicators_active = #fff;
+			// Граница индикатора
+		$slider_indicators_border = #4cd3ff;
+
+	//////////SOCIALS//////////
+			// Цвет текста социальных кнопок
+		$social_color_default = #fff;
+
+			// Facebook
+				// Фон
+		$facebook_bg = #5270ab;
+				// Границы
+		$facebook_border = #4666a5;
+
+			// Vk
+				// Фон
+		$vk_bg = #3d5c7f;
+				// Границы
+		$vk_border = #335478;
+
+			// twitter
+				// Фон
+		$tweet_bg = #5cabcb;
+				// Границы
+		$tweet_border = #58a9ca;
+		
+			// links
+				// Фон
+		$links_bg = #7fb737;
+				// Границы
+		$links_border =	#77b32b;
+
+
+//////////////BODY/////////////////////
+		// Фон
+	$body_bg = #fff;
+
+//////////////HEADER//////////////////
+
+	// Фон хэдера по умолчанию 
+	$header_bg = #0ca1d2;
+	// Фон корзинки
+	$header_cart_bg = #0f3b4d;
+	// Фон области с emailом
+	$header_email_bg = #134d60;
+	// Нижняя граница хэдера
+	$header_border_bottom = #d9dedf;
+
+//////////////BREADCRUMBS////////////
+	
+	// Фон
+	$breadcrumbs_bg = #f2f2f2;
+	// Цвет крошки обычное состояние
+	$breadcrumbs_color_default = #0c546d;
+	// Активное состояние
+	$breadcrumbs_color_active = #758788;
+	// Разделитель
+	$breadcrumbs_divider = #758788;
+	// Границы
+	$breadcrumbs_border = #eaebe8;
+	// Верхняя граница
+	$breadcrumbs_border_top = #f6f5f5;
+
+
+//////////////SHOP////////////
+
+$filter_header_bg = #f2f2f2;
+$filter_body_bg = #fff;
+
+//////////////INDEX//////////////////
+	
+	//////////SLIDER
+		// Фон у слайдера
+	$slider_bg_default = #0ca1d2;
+		// Паллелограм внутри слайдера
+	$slider_parrgram_bg = #0587b2;
+
+	//////////OBSERVE
+	$observe_bg = #fff;
+
+	//////////REASONS
+
+		// Заголовок с причинами
+	$reason_header_bg = #0587b2;
+		// Фон поверхности с причиной
+	$reason_bg = #0ca1d2;
+		// Нижняя граница у причины
+	$reason_border_bottom = #41d0ff;
+
+	//////////FORM
+
+	$form_bg = #0587b2;
+
+//////////////FOOTER//////////////////
+$footer_bg = #0587b2;

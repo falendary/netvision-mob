@@ -1,0 +1,146 @@
+doctype html5
+html
+	head
+		include ./utils/head.jade
+	body
+		.shop-holder
+			form(action="").filter
+				.shop-drop-down.categories
+					label(for="ipcam")
+						input(type="radio", name="category")#ipcam
+						|IP камеры
+					label(for="analogcam")
+						input(type="radio", name="category")#analogcam
+						|Аналоговые камеры
+					label(for="webcam")
+						input(type="radio", name="category")#webcam
+						|Web камеры
+					label(for="dvr")
+						input(type="radio", name="category")#dvr
+						|DVR
+				.shop-drop-down.price
+					label(for="cheap")
+						input(type="radio", name="price")#cheap
+						|1500-2500
+					label(for="goodprice")
+						input(type="radio", name="price")#goodprice
+						|2500-5000
+					label(for="expensive")
+						input(type="radio", name="price")#expensive
+						|5000-10000
+					label(for="veryexpensive")
+						input(type="radio", name="price")#veryexpensive
+						|10000-15000
+					label(for="any")
+						input(type="radio", name="price")#any
+						|Любая
+				.shop-drop-down.producer
+					label(for="dns")
+						input(type="checkbox", name="dns")#dns
+						|DNS
+					label(for="a4tech")
+						input(type="checkbox", name="a4tech")#a4tech
+						|A4Tech
+					label(for="cbr")
+						input(type="checkbox", name="cbr")#cbr
+						|CBR
+					label(for="defender")
+						input(type="checkbox", name="defender")#defender
+						|Defender
+					label(for="genius")
+						input(type="checkbox", name="genius")#genius
+						|Genius
+					label(for="hercules")
+						input(type="checkbox", name="hercules")#hercules
+						|Hercules
+					label(for="hp")
+						input(type="checkbox", name="hp")#hp
+						|HP
+					label(for="intro")
+						input(type="checkbox", name="intro")#intro
+						|Intro
+					label(for="logitech")
+						input(type="checkbox", name="logitech")#logitech
+						|Logitech
+					label(for="microsoft")
+						input(type="checkbox", name="microsoft")#microsoft
+						|Microsoft
+					label(for="ritmix")
+						input(type="checkbox", name="ritmix")#ritmix
+						|Ritmix
+					label(for="samsung")
+						input(type="checkbox", name="samsung")#samsung
+						|Samsung
+					label(for="sven")
+						input(type="checkbox", name="sven")#sven
+						|Sven
+					label(for="trust")
+						input(type="checkbox", name="trust")#trust
+						|Trust
+				.shop-drop-down.resolution
+					label(for="res1280x1024")
+						input(type="checkbox", name="res1280x1024")#res1280x1024
+						|1280x1024
+					label(for="res1280x720")
+						input(type="checkbox", name="res1280x720")#res1280x720
+						|1280x720
+					label(for="res1280x960")
+						input(type="checkbox", name="res1280x960")#res1280x960
+						|1280x960
+					label(for="res1920x1080")
+						input(type="checkbox", name="res1920x1080")#res1920x1080
+						|1920x1080
+					label(for="res640x480")
+						input(type="checkbox", name="res640x480")#res640x480
+						|640x480
+					label(for="res800x600")
+						input(type="checkbox", name="res800x600")#res800x600
+						|800x600
+				.shop-drop-down.option
+					label(for="speaker")
+						input(type="radio", name="option")#speaker
+						|Микрофон
+					label(for="highlight")
+						input(type="radio", name="option")#highlight
+						|Подсветка
+				input(type="submit", value="ПРИМЕНИТЬ ФИЛЬТР", class="submit-btn")
+		.show-result-holder
+			ul.listitem
+				li
+					img(src="", alt="")
+					p.name
+						|ВЕБ-КАМЕРА
+					p.article
+						|DNS-0306ABS
+					p.desc
+						|640x480 (1280x960 с драйверами, USB 2.0)
+					p.price
+						|520 Р
+					a(href="#")
+						|В КОРЗИНУ
+				li
+					img(src="", alt="")
+					p.name
+						|ВЕБ-КАМЕРА
+					p.article
+						|DNS-0306ABS
+					p.desc
+						|640x480 (1280x960 с драйверами, USB 2.0)
+					p.price
+						|520 Р
+					a(href="#")
+						|В КОРЗИНУ
+				li
+					img(src="", alt="")
+					p.name
+						|ВЕБ-КАМЕРА
+					p.article
+						|DNS-0306ABS
+					p.desc
+						|640x480 (1280x960 с драйверами, USB 2.0)
+					p.price
+						|520 Р
+					a(href="#")
+						|В КОРЗИНУ
+		include ./utils/footer.jade
+		include ./utils/scripts.jade
