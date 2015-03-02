@@ -1,0 +1,48 @@
+.ovservation-holder
+{
+	h1
+	{
+		text-align: center;
+		width: 11rem;
+		margin: 1.9875rem auto 1.5625rem;
+		font-family: 'PTSansBold';
+		font-size: 1.2rem;
+	}
+	.observation
+	{
+		.item
+		{
+			height: 17.5rem;
+			overflow: hidden;
+			.inner-holder
+			{
+				width: calc(100% - 7rem) !important;
+				margin: 0 auto;
+				overflow: hidden;
+				img
+				{
+					height: 17.5rem; 
+				}
+			}
+		}
+		.slick-prev, .slick-next
+		{
+			position: absolute;
+		}
+		.slick-prev
+		{
+			left: 0;
+			bottom: 50%;
+		}
+		.slick-next
+		{
+			right: 0;
+			bottom: 50%;
+		}
+		.slick-dots
+		{
+			width: 50px;
+			margin-left: 3.5rem;
+		}
+	}
+}

@@ -7,33 +7,33 @@ html
 		.slider-holder
 			.slider
 				.item
-					p
-						|ВАША БЕЗОПАСНОСТЬ - НАША РАБОТА
-					img(src="", alt="")
+					p.header
+						|ВАША БЕЗОПАСНОСТЬ — НАША РАБОТА
+					img(src="images/m-slider-img.png", alt="")
 					p.caption
 						|ПОДКЛЮЧЕНИЕ ЛЮБОЙ КАМЕРЫ К ОБЛАКУ
 				.item
-					p
-						|ВАША БЕЗОПАСНОСТЬ - НАША РАБОТА
-					img(src="", alt="")
+					p.header
+						|ВАША БЕЗОПАСНОСТЬ — НАША РАБОТА
+					img(src="images/m-slider-img.png", alt="")
 					p.caption
 						|ПОДКЛЮЧЕНИЕ ЛЮБОЙ КАМЕРЫ К ОБЛАКУ
 				.item
-					p
-						|ВАША БЕЗОПАСНОСТЬ - НАША РАБОТА
-					img(src="", alt="")
+					p.header
+						|ВАША БЕЗОПАСНОСТЬ — НАША РАБОТА
+					img(src="images/m-slider-img.png", alt="")
 					p.caption
 						|ПОДКЛЮЧЕНИЕ ЛЮБОЙ КАМЕРЫ К ОБЛАКУ
 				.item
-					p
-						|ВАША БЕЗОПАСНОСТЬ - НАША РАБОТА
-					img(src="", alt="")
+					p.header
+						|ВАША БЕЗОПАСНОСТЬ — НАША РАБОТА
+					img(src="images/m-slider-img.png", alt="")
 					p.caption
 						|ПОДКЛЮЧЕНИЕ ЛЮБОЙ КАМЕРЫ К ОБЛАКУ
 				.item
-					p
-						|ВАША БЕЗОПАСНОСТЬ - НАША РАБОТА
-					img(src="", alt="")
+					p.header
+						|ВАША БЕЗОПАСНОСТЬ — НАША РАБОТА
+					img(src="images/m-slider-img.png", alt="")
 					p.caption
 						|ПОДКЛЮЧЕНИЕ ЛЮБОЙ КАМЕРЫ К ОБЛАКУ
 			.slider-info
@@ -42,36 +42,49 @@ html
 						|NET-NORD
 					dd
 						|ОБЛАЧНЫЙ СЕРВИС ВИДЕОНАБЛЮДЕНИЯ ЧЕРЕЗ ИНТЕРНЕТ
-				p
-					|net-nord дает вам возможность просматривать запись с ваших видеокамер с любого устройства в любой точке мира.
-		include ./common/observation.jade
+				.paragram
+					p
+						|net-nord дает вам возможность просматривать запись с ваших видеокамер с любого устройства в любой точке мира.
+		include ./common/observation-index.jade
 		.reasons-holder
-			.reasons-header
-				|5 причин выбрать net-nord
-			ul
-				li
+			.inner-wrapper
+				.reasons-header
+					|5 причин выбрать<br/> net-nord
+			ul.reasons-list
+				li.reason
+					.icon
+						img(src="images/m-reason-icon1.png", alt="")
 					p
 						|Хранение архивных видеозаписей на облачном сервере «Нэт-норд»
-				li
+				li.reason
+					.icon
+						img(src="images/m-reason-icon1.png", alt="")
 					p
 						|Хранение архивных видеозаписей на облачном сервере «Нэт-норд»
-				li
+				li.reason
+					.icon
+						img(src="images/m-reason-icon1.png", alt="")
 					p
 						|Хранение архивных видеозаписей на облачном сервере «Нэт-норд»
-				li
+				li.reason
+					.icon
+						img(src="images/m-reason-icon1.png", alt="")
 					p
 						|Хранение архивных видеозаписей на облачном сервере «Нэт-норд»
-				li
+				li.reason
+					.icon
+						img(src="images/m-reason-icon1.png", alt="")
 					p
 						|Хранение архивных видеозаписей на облачном сервере «Нэт-норд»
 		include ./common/news-index.jade
 		.form-holder
 			form(action="")
-				.form-header
+				h1.form-header
 					|ОСТАВЬТЕ ЗАЯВКУ НА ПОДКЛЮЧЕНИЕ
 				input(type="text", placeholder="Иван Петров")
 				input(type="text", placeholder="+7 (910) 234-45-45")
 				input(type="email", placeholder="somebody@gmail.com")
 				textarea(placeholder="Системы видеонаблюдения — это основное средство технической безопасности и сбора информации,")
+				input(type="submit", value="ОТПРАВИТЬ").btn.btn-submit.centered
 		include ./utils/footer.jade
 		include ./utils/scripts.jade

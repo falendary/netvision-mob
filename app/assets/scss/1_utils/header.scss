@@ -1,0 +1,31 @@
+@import "./colorsheme.scss";
+header
+{
+	background-color: $header_bg;
+	.phone
+	{
+		font-family: 'PTSansRegular';
+		color: #fff;
+		font-size: 1.5rem;
+		padding: 1rem 0 0 1rem;
+	}
+	.email
+	{
+		height: 3.5rem;
+		background-color: $header_email_bg;
+		width: calc(100% - (7rem + 6.9375rem));
+	}
+	.logo
+	{
+		width: 6.9375rem;
+		padding: 1rem .5rem 0 .5rem;
+		img
+		{
+			width: 100%;
+		}
+	}
+}
+.row
+{
+	height: 4rem;
+}

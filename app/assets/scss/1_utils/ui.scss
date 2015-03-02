@@ -1,0 +1,145 @@
+@import "./colorsheme.scss";
+.btn
+{
+	width: 4rem;
+	height: 4rem;
+}
+.btn-profile
+{
+	background-color: $profile_btn_bg;
+	background-image: url(../images/m-profile-bg.png);
+	background-size: 1.5625rem 1.5rem;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.btn-menu
+{
+	background-color: $settings_btn_bg;
+	background-image: url(../images/m-menu-bg.png);
+	background-size: 2.125rem 1.5rem;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.btn-search
+{
+	background-color: $search_btn_bg;
+	background-image: url(../images/m-search-bg.png);
+	background-size: 1.5rem 1.5rem;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.btn-cam
+{
+	background-color: $cam_btn_bg;
+	background-image: url(../images/m-cam-bg.png);
+	background-size: 1.5rem 1.2rem;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.btn-cart
+{
+	background-color: $header_cart_bg;
+	background-image: url(../images/m-cart-bg.png);
+	background-size: 1.8125rem 1.5625rem;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.btn-all-news
+{
+	background-color: $news_all_bg;
+	width: 15rem;
+	height: 3.5rem;
+	color: $news_all_color;
+	text-align: center;
+	padding: 1.2rem 0 0;
+	display: block;
+	font-size: 1.3rem;
+	font-family: "PFDinDisplayPro-Regular";
+}
+.btn-submit
+{
+	background-color: $news_all_bg;
+	color: $submit_color;
+	border: 0;
+	height: 3.5rem;
+	display: block;
+	width: 15rem;
+}
+.slick-dots
+{
+	margin: .75rem auto;
+	height: .8125rem;
+	display: flex;
+	width: 5rem;
+	li
+	{
+		flex-grow: 1;
+		margin-right: .375rem; 
+		float: left;
+		position: relative;
+		width: .8125rem;
+		height: .8125rem;
+		button
+		{
+			width: .8125rem;
+			height: .8125rem;
+			background-color: $slider_indicators_default;
+			border: 1px solid $slider_indicators_border;
+			border-radius: 50%;
+			text-indent: -9999rem;
+			outline: none;
+		}
+		&.slick-active
+		{
+			button
+			{
+				background-color: $slider_indicators_active;
+			}	
+		}
+		&:last-child
+		{
+			margin-right: 0;
+		}
+	}
+}
+.slick-prev, .slick-next
+{
+	width: 3.5rem;
+	height: 3.5rem;
+	background-color: $slider_controls_bg;
+	text-indent: -9999;
+	border: 0;
+	position: relative;
+}
+.slick-prev
+{
+	&::after
+	{
+		content: '';
+		display: block;
+		width: 0;
+		right: 1.4375rem;
+		position: absolute;
+		bottom: .9375rem;
+		height: 0;
+		border-top: .875rem solid transparent;
+		border-right: .85rem solid $slider_controls_arrow;
+		border-bottom: .875rem solid transparent;
+	}
+}
+.slick-next
+{
+	&::after
+	{
+		content: '';
+		display: block;
+		width: 0;
+		position: absolute;
+		left: 1.4375rem;
+		bottom: .9375rem;
+		height: 0;
+		border-top: .875rem solid transparent;
+		border-left: .85rem solid $slider_controls_arrow;
+		border-bottom: .875rem solid transparent;
+	}
+}

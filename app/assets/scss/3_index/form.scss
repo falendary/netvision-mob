@@ -1,0 +1,42 @@
+@import "../1_utils/colorsheme.scss";
+.form-holder
+{
+	background-color: $form_bg;
+	form
+	{
+		h1
+		{
+			font-family: 'PTSansBold';
+			font-size: 1.2rem;
+			line-height: 1.4rem;
+		}
+		box-sizing: border-box;
+		width: 75.5%;
+		margin: 0 auto;
+		padding: 1.4375rem 0 0 0;
+		.form-header
+		{
+			margin: 0 auto 1.4375rem;
+			color: $form_color;
+			text-align: center;
+			width: 10.875rem;
+		}
+		input[type="text"], input[type="email"]
+		{
+			height: 3.5rem;
+			width: 100%;
+			font-size: 1.2rem;
+			padding: 0 0 0 .5rem;
+			margin-bottom: .125rem;
+		}
+		textarea
+		{
+			width: 100%;
+			resize: none;
+			height: 7.375rem;
+			padding: .5rem 0 0 .5rem;
+			font-size: 1.2rem;
+			margin-bottom: .125rem;
+		}
+	}
+}

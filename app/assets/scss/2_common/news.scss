@@ -1,0 +1,52 @@
+@import "../1_utils/colorsheme.scss";
+@import "../1_utils/mixins.scss";
+.news-holder
+{
+	padding: 0 0 3.75rem 0;
+	h1
+	{
+		text-align: center;
+		margin: 1.5rem 0 2rem 0;
+		font-family: 'PTSansBold';
+		font-size: 1.2rem;
+	}
+	.news-list
+	{
+		width: 90%;
+		margin: 0 auto;
+		.news-preview
+		{
+			margin: 0 0 1.5625rem 0;
+			.preview-img-col
+			{
+				float: left;
+				width: 5.125rem;
+				margin: 0 1rem 0 0;
+			}
+			.preview-content-col
+			{
+				float: left;
+				width: calc(100% - 6.125rem);
+				padding: 0 0 2.75rem 0;
+				border-bottom: 1px solid $news_preview_border_bottom;
+				time
+				{
+					display: block;
+					color: $news_preview_date_color;
+					margin: 0 0 .5rem 0;
+				}	
+				a
+				{
+					font-family: 'PTSansRegular';
+					line-height: 1.2rem;
+					color: $news_preview_color;
+					text-decoration: underline;
+				}
+			}
+			&::after
+			{
+				@include clear();
+			}
+		}
+	}
+}

@@ -1,0 +1,122 @@
+@import "../1_utils/colorsheme.scss";
+.slider-holder
+{
+	color: $slider_color_default;
+	background-color: $slider_bg_default;
+	.slider
+	{
+		.item
+		{
+			height: 17.5rem;
+			position: relative;
+			img
+			{
+				width: 100%;
+				height: 100%;
+			}
+			p
+			{
+				position: absolute;
+				text-align: center;
+				&.header
+				{
+					font-family: "PFDinDisplayPro-Medium";
+					margin: 1.625rem 0 0 0; 
+					width: 75%;
+					left: 12.5%;
+					font-size: 1.3rem;
+					line-height: 1.4rem;
+				}
+				&.caption
+				{
+					width: 11.25rem;
+					height: 11.25rem;
+					border-radius: 50%;
+					bottom: .9375rem;
+					padding: 3.75rem .5rem 0 .5rem;
+					font-family:'PTSansRegular';
+					font-size: 1.25rem;
+					left: calc(50% - 5.625rem);
+					background-color: $slider_caption_bg_default;
+				}
+				&.caption::after
+				{
+					display: block;
+					content: '';
+					width: 0;
+					height: 0;
+					left: calc(50% - 2rem);
+					position: absolute;
+					bottom: -1rem;
+					border-left: 2rem solid transparent;
+				    border-right: 2rem solid transparent;
+				    border-top: 2rem solid $slider_caption_bg_default;
+				}
+			}
+		}
+	}
+	.slider-info
+	{
+		dl
+		{
+			width: 16rem;
+			margin: 0 auto;
+			text-align: center;
+			dt
+			{
+				color: $slider_dt_color;
+				font-family: "PFDinDisplayPro-Black";
+				margin: 1.5rem 0 .5rem 0;
+				font-size: 1.2rem;
+			}		
+			dd
+			{
+				width: 10rem;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 1.3rem;
+				font-size: 1.1rem;
+				font-family: "PFDinDisplayPro-Regular";
+			}
+		}
+		.paragram
+		{
+			width: 100%;
+			margin: 1.225rem 0 0 0;
+			position: relative;
+			height: 5.125rem;
+			background-color: $slider_parrgram_bg;
+			&::before
+			{
+				position: absolute;
+				display: block;
+				content: '';
+				width: 0;
+			    height: 0;
+			    border-top: 5.125rem solid $slider_parrgram_triangles_bg; 
+			    border-right: 3.75rem solid transparent;
+			}
+			&::after
+			{
+				position: absolute;
+				display: block;
+				right: 0;
+				top: 0;
+				content: '';
+				width: 0;
+			    height: 0;
+			    border-bottom: 5.125rem solid $slider_parrgram_triangles_bg; 
+			    border-left: 3.75rem solid transparent;
+			}
+			p
+			{
+				margin: 0 auto;
+				font-family: "PFDinDisplayPro-Medium";
+				padding: .9375rem 2.5rem 0  4rem;
+				text-transform: uppercase;
+				font-size: .77rem;
+				line-height: .77rem;
+			}
+		}
+	}
+}

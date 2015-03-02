@@ -1,0 +1,58 @@
+@import "../1_utils/colorsheme.scss";
+@import "../1_utils/mixins.scss";
+.reasons-holder
+{
+	background-color: $reason_header_bg;
+	.reasons-header
+	{
+		height: 5.3125rem;
+		
+		text-transform: uppercase;
+		font-family: 'PTSansBold';
+		color: #fff;
+		text-align: center;
+		font-size: 1.2rem;
+		padding: 1.2rem 0 0 0;
+		&:first-letter
+		{
+			color: #ede014;
+		}
+	}
+	.reasons-list
+	{
+		.reason
+		{
+			color: $reason_color;
+			height: 8.5rem;
+			width: 100%;
+			text-transform: uppercase;
+			background-color: $reason_bg;
+			border-bottom: 1px solid $reason_border_bottom;
+			.icon
+			{
+				float: left;
+				width: 8.125rem;
+				height: 100%;
+				img
+				{
+					width: 4.875rem;
+					margin: 1.5rem auto;
+					display: block;
+				}
+			}
+			p
+			{
+				width: calc(100% - 8.125rem);
+				padding: 2rem .5rem 0 0;
+				float: left;
+				font-family: "PFDinDisplayPro-Regular";
+				font-size: 1.14rem;
+				line-height: 1.14rem;
+			}
+			&::after
+			{
+				@include clear();
+			}
+		}
+	}
+}
