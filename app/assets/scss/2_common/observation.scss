@@ -1,3 +1,5 @@
+@import "../1_utils/colorsheme.scss";
+@import "../1_utils/mixins.scss";
 .ovservation-holder
 {
 	h1
@@ -16,12 +18,27 @@
 			overflow: hidden;
 			.inner-holder
 			{
-				width: calc(100% - 7rem) !important;
+				// width: calc(100% - 7rem) !important;
 				margin: 0 auto;
 				overflow: hidden;
+				position: relative;
 				img
 				{
-					height: 17.5rem; 
+					width: 100%;
+				}
+				figcaption
+				{
+					position: absolute;
+					background: rgba(0,0,0,.5);
+					width: 100%;
+					height: 3.5rem;
+					text-align: center;
+					color: #fff;
+					font-family: "PFDinDisplayPro-Regular";
+					bottom: 0;
+					padding: 1rem 0 0 0;
+					font-size: 1.2rem;
+					text-transform: uppercase;
 				}
 			}
 		}
@@ -41,8 +58,67 @@
 		}
 		.slick-dots
 		{
-			width: 50px;
-			margin-left: 3.5rem;
+			margin-left: 1rem;
+		}
+	}
+	.observation.similar
+	{
+		.item
+		{
+			height: auto;
+			width: 18rem;
+			padding: 1.5rem;
+			border: 1px solid $item_border_default;
+			margin: 0 1rem 0 1rem;
+			img
+			{
+				height: 12rem;
+				display: block;
+				margin: 0 auto;
+			}
+			p
+			{
+				text-align: center;
+				font-size: 1.2rem;
+				font-family: "PFDinDisplayPro-Bold";
+			}
+			.name
+			{
+				color: $item_name_default;
+				
+				margin: 0 0 .2rem 0;
+			}
+			.article
+			{
+				color: $item_name_default;
+				margin: 0 0 .7rem 0;
+			}
+			.desc
+			{
+				color: $item_desc_default;
+				font-family: "PFDinDisplayPro-Regular";
+				margin: 0 0 1.2rem;
+			}
+			.price
+			{
+				font-family: 'PTSansBold';
+				font-size: 1.8rem;
+				font-weight: bold;
+				color: $item_price_default;
+				margin: 0 0 1.2rem 0;
+			}
+			a.btn-to-cart
+			{
+				text-decoration: none;
+			}
+		}
+		.slick-dots
+		{
+			width: auto;
+		}
+		&::after
+		{
+			@include clear();
 		}
 	}
 }

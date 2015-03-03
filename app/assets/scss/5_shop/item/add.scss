@@ -1,0 +1,127 @@
+@import "../../1_utils/colorsheme.scss";
+@import "../../1_utils/mixins.scss";
+.product-page
+{
+	.ovservation-holder .observation .slick-dots
+	{
+		width: 4rem;
+	}
+	.product
+	{
+		width: 18.5rem;
+		padding: 1.5rem;
+		border: 1px solid $item_border_default;
+		margin: 0 auto 1rem;
+		img
+		{
+			height: 12rem;
+			display: block;
+			margin: 0 auto;
+		}
+		p
+		{
+			text-align: center;
+			font-size: 1.2rem;
+			font-family: "PFDinDisplayPro-Bold";
+		}
+		.name
+		{
+			color: $item_name_default;
+			
+			margin: 0 0 .2rem 0;
+		}
+		.article
+		{
+			color: $item_name_default;
+			margin: 0 0 2.5rem 0;
+		}
+		.desc
+		{
+			color: $item_desc_default;
+			font-family: "PFDinDisplayPro-Regular";
+			margin: 0 0 1.2rem;
+		}
+		.price
+		{
+			font-family: 'PTSansBold';
+			font-size: 1.8rem;
+			font-weight: bold;
+			color: $item_price_default;
+			margin: 0 0 1.2rem 0;
+		}
+		a.btn-to-cart
+		{
+			text-decoration: none;
+		}
+	}
+	.characters
+	{
+		dl
+		{
+			font-family: "PFDinDisplayPro-Regular";
+			margin: 0 0 .7rem 0;
+			font-size: 1.1rem;
+			dt
+			{
+				display: inline;
+			}
+			dd
+			{
+				display: inline;
+			}
+		}
+		.white-bg
+		{
+			padding: 1.5rem;
+			background: $item_page_chars_bg_default;
+			color: $item_page_chars_color_custom1;
+		}
+		.blue-bg
+		{
+			padding: 1.5rem;
+			background: $item_page_chars_bg_custom1;
+			color: $item_page_chars_color_default;
+		}
+	}
+	.tabs-holder
+	{
+		padding: 1rem 2.5rem 0 2.5rem;
+		.tabs-menu
+		{
+			border-bottom: 2px solid $item_page_tabs_border;
+			a
+			{
+				color: $item_page_tabs_color;
+				float: left;
+				padding: 1rem .7rem .7rem .7rem;
+				font-size: .9rem;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-family: "PFDinDisplayPro-Bold";
+			}
+			a.active
+			{
+				text-decoration: none;
+				background: $item_page_tabs_bg;
+			}
+			&::after
+			{
+				@include clear();
+			}
+		}
+
+		.tab-panel
+		{
+			font-family: "PFDinDisplayPro-Regular";
+			color: $item_page_chars_color_custom2;
+			padding: 1rem 0 0 0;
+			line-height: 1.2rem;
+			font-size: 1.15rem;
+			display: none;
+			&.active
+			{
+				display: block;
+			}
+		}
+	}
+}

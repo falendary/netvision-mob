@@ -1,0 +1,79 @@
+doctype html5
+html
+	head
+		include ./utils/head.jade
+	body
+		include ./utils/header.jade
+		include ./utils/breadcrumbs.jade
+		.product-page
+			include ./common/observation-item.jade
+			.product
+				p.name
+					|ВЕБ-КАМЕРА
+				p.article
+					|DNS-0306ABS
+				p.price
+					|520 Р
+				a(href="#").btn-md.btn-to-cart.centered
+					|В КОРЗИНУ
+			.characters
+				.white-bg
+					dl
+						dt
+							|Код товара
+						dd
+							|948475634850
+					dl
+						dt
+							|640x480 (1280x960 с драйверами, USB 2.0)
+						dd
+				.blue-bg
+					dl
+						dt
+							|Число мегапикселей матрицы
+						dd
+							|0.3 МП
+					dl
+						dt
+							|Тип матрицы:
+						dd
+							|CMOS
+					dl
+						dt
+							|Максимальная частота кадров: 
+						dd
+							|30 кадр/с
+					dl
+						dt
+							|Поддержка режимов:
+						dd
+							|640x480 @ 30 Гц
+					dl
+						dt
+							|Разрешение (видео): 
+						dd
+							|640x480
+					dl
+						dt
+							|Интерполированное разрешение (фото): 
+						dd
+							|3200x2400
+					dl
+						dt
+							|Фокусировка:
+						dd
+							|ручная
+			.tabs-holder
+				.tabs-menu
+					a(href="#description").tab-control.active
+						|Описание
+					a(href="#chars-place").tab-control
+						|Характеристики
+				.tab-panel.active#description
+					p
+						|Sven IC-720 позволяет передавать изображение хорошего качества с большой скоростью и без задержек. Она подойдет большинству пользователей и обеспечит вам качественные разговоры с собеседниками благодаря камере 0.3 МП. В данной модели имеется встроенный микрофон, что позволит разговаривать без специальных наушников, фокусировку можно настроить по своему желанию вручную. К компьютеру камера Sven IC-720 подключается с помощью USB 2.0.
+				.tab-panel#chars-place
+		include ./common/socials.jade
+		include ./common/observation-similar.jade
+		include ./utils/footer.jade
+		include ./utils/scripts.jade

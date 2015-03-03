@@ -1,0 +1,127 @@
+@import "../../1_utils/colorsheme.scss";
+@import "../../1_utils/mixins.scss";
+.shop-holder
+{
+	.filter
+	{
+		input[type="radio"],input[type="checkbox"]
+		{
+			display: none;
+		}
+		padding: 1rem 2rem 0 2rem;
+		.shop-drop-down
+		{
+			margin: 0 auto .5rem;
+			width: 100%;
+			border: 1px solid $filter_borders;
+			padding: .5rem 0 .5rem 0;
+			label
+			{
+				display: block;
+				padding: 0 0 0 3rem;
+				margin: .8rem 0 .8rem 0;
+			}
+			.dd-header
+			{
+				height: 3.375rem;
+				width: 100%;
+				font-family: "PFDinDisplayPro-Regular";
+				color: $filter_header_color_default;
+				text-transform: uppercase;
+				font-size: 1.15rem;
+				padding: 1.2rem 0 0 1.5rem;
+				background: $filter_header_bg;
+				border-bottom: 1px solid $filter_borders;
+			}
+		}
+		.shop-drop-down.categories, .shop-drop-down.option, .shop-drop-down.price
+		{
+			label
+			{
+				background: url(../images/m-uncheckedradio.png) no-repeat 1.6rem 50%;
+				background-size: 1rem 1rem;
+			}
+			label.checked
+			{
+				background: url(../images/m-checkedradio.png) no-repeat 1.6rem 50%;
+				background-size: 1rem 1rem;
+			}
+				
+		}
+		.shop-drop-down.producer, .shop-drop-down.resolution
+		{
+			label
+			{
+				background: url(../images/m-uncheckedselect.png) no-repeat 1.6rem 50%;
+				background-size: 1rem 1rem;
+			}
+			label.checked
+			{
+				background: url(../images/m-checkedselect.png) no-repeat 1.6rem 50%;
+				background-size: 1rem 1rem;
+			}
+		}
+	}
+}
+.show-result-holder
+{
+	padding: 1rem 1rem 0 1rem;
+	.listitem
+	{
+		width: 100%;
+		.item
+		{
+			width: 18rem;
+			float: left;
+			padding: 1.5rem;
+			border: 1px solid $item_border_default;
+			margin: 0 2.5rem 3.5rem 0;
+			img
+			{
+				height: 12rem;
+				display: block;
+				margin: 0 auto;
+			}
+			p
+			{
+				text-align: center;
+				font-size: 1.2rem;
+				font-family: "PFDinDisplayPro-Bold";
+			}
+			.name
+			{
+				color: $item_name_default;
+				
+				margin: 0 0 .2rem 0;
+			}
+			.article
+			{
+				color: $item_name_default;
+				margin: 0 0 .7rem 0;
+			}
+			.desc
+			{
+				color: $item_desc_default;
+				font-family: "PFDinDisplayPro-Regular";
+				margin: 0 0 1.2rem;
+			}
+			.price
+			{
+				font-family: 'PTSansBold';
+				font-size: 1.8rem;
+				font-weight: bold;
+				color: $item_price_default;
+				margin: 0 0 1.2rem 0;
+			}
+			a.btn-to-cart
+			{
+				text-decoration: none;
+			}
+		}
+		&::after
+		{
+			@include clear();
+		}
+	}
+}
+

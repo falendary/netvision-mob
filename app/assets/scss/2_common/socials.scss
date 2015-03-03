@@ -1,0 +1,58 @@
+@import "../1_utils/colorsheme.scss";
+@import "../1_utils/mixins.scss";
+
+.socials-holder
+{
+	padding: 1rem;
+	.inner-holder
+	{
+		border-top: 1px solid $socials_border_default;
+		border-bottom: 1px solid $socials_border_default;
+	}
+	ul
+	{
+		padding: 1rem 1rem;
+		width: 18rem;
+		margin: 0 auto;
+		li
+		{
+			float: left;
+			a
+			{
+				display: block;
+				width: 3.25rem;
+				height: 3.25rem;
+				border-radius: .4rem;
+				margin: 0 .95rem 0 0;
+
+			}
+			&:last-child
+			{
+				a
+				{
+					margin: 0;	
+				}
+			}
+		}
+		.facebook
+		{
+			background: url(../images/m-soc-icons.png) no-repeat -.5rem -.4rem;
+		}
+		.vk
+		{
+			background: url(../images/m-soc-icons.png) no-repeat -6.8rem -.5rem;
+		}
+		.twitter
+		{
+			background: url(../images/m-soc-icons.png) no-repeat -13rem -.4rem;
+		}
+		.linksoc
+		{
+			background: url(../images/m-soc-icons.png) no-repeat -19rem -.4rem;
+		}
+		&::after
+		{
+			@include clear();
+		}
+	}
+}

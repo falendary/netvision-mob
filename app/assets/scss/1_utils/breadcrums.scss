@@ -1,0 +1,43 @@
+@import "./colorsheme.scss";
+@import "../1_utils/mixins.scss";
+.breadcrumbs
+{
+	background: $breadcrumbs_bg;
+	border: 1px solid $breadcrumbs_border;
+	padding: 1.1375rem 0 1.1375rem 1rem;
+	font-family: "PFDinDisplayPro-Regular";
+	line-height: 1.1rem;
+	font-size: 1.1rem;
+	border-bottom: 1px solid $breadcrumbs_border;
+	li
+	{
+		float: left;
+		a
+		{
+			color: $breadcrumbs_color_default;
+		}
+		&.active
+		{
+			a
+			{
+				color: $breadcrumbs_color_active;
+			}
+		}
+		&::after
+		{
+			content: '/';
+			display: block;
+			float: right;
+			margin: 0 .5rem 0 .5rem;
+			color: $breadcrumbs_divider;
+		}
+		&:last-child::after
+		{
+			content: '';
+		}
+	}
+	&::after
+	{
+		@include clear();
+	}
+}

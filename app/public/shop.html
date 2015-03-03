@@ -7,133 +7,135 @@
     <link href="css/style.css" rel="stylesheet"/>
   </head>
   <body>
+    <header>
+      <div class="row">
+        <div class="logo pull-left"><img src="../images/m-header-logo.png" alt=""/></div>
+        <div class="phone pull-left">8-800-200-80-30</div>
+      </div>
+      <div class="row"><a href="#" class="btn btn-search pull-left"></a>
+        <div class="btn-group pull-right"><a href="#" class="btn btn-cart pull-left"></a><a href="#" class="btn btn-menu pull-left"></a></div>
+        <div class="btn-group pull-right"><a href="#" class="btn btn-profile pull-left"></a><a href="#" class="btn btn-cam pull-left"></a></div>
+      </div>
+      <ul class="dropped-menu">
+        <li><a href="#">О КОМПАНИИ</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Подключение</a></li>
+        <li><a href="#">Готовые решения</a></li>
+        <li><a href="#">Тарифы</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <form action="" class="dropped-search">
+        <input type="text" placeholder="ВВЕДИТЕ ВАШ ЗАПРОС" value=""/><a href="#" class="clearform"></a>
+      </form>
+    </header>
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li class="active"><a href="#">Новости</a></li>
+    </ul>
     <div class="shop-holder">
       <form action="" class="filter">
-        <div class="shop-drop-down categories">
-          <label for="ipcam">
-            <input type="radio" name="category" id="ipcam"/>IP камеры
-          </label>
-          <label for="analogcam">
-            <input type="radio" name="category" id="analogcam"/>Аналоговые камеры
-          </label>
-          <label for="webcam">
-            <input type="radio" name="category" id="webcam"/>Web камеры
-          </label>
-          <label for="dvr">
-            <input type="radio" name="category" id="dvr"/>DVR
-          </label>
-        </div>
-        <div class="shop-drop-down price">
-          <label for="cheap">
-            <input type="radio" name="price" id="cheap"/>1500-2500
-          </label>
-          <label for="goodprice">
-            <input type="radio" name="price" id="goodprice"/>2500-5000
-          </label>
-          <label for="expensive">
-            <input type="radio" name="price" id="expensive"/>5000-10000
-          </label>
-          <label for="veryexpensive">
-            <input type="radio" name="price" id="veryexpensive"/>10000-15000
-          </label>
-          <label for="any">
-            <input type="radio" name="price" id="any"/>Любая
-          </label>
-        </div>
-        <div class="shop-drop-down producer">
-          <label for="dns">
-            <input type="checkbox" name="dns" id="dns"/>DNS
-          </label>
-          <label for="a4tech">
-            <input type="checkbox" name="a4tech" id="a4tech"/>A4Tech
-          </label>
-          <label for="cbr">
-            <input type="checkbox" name="cbr" id="cbr"/>CBR
-          </label>
-          <label for="defender">
-            <input type="checkbox" name="defender" id="defender"/>Defender
-          </label>
-          <label for="genius">
-            <input type="checkbox" name="genius" id="genius"/>Genius
-          </label>
-          <label for="hercules">
-            <input type="checkbox" name="hercules" id="hercules"/>Hercules
-          </label>
-          <label for="hp">
-            <input type="checkbox" name="hp" id="hp"/>HP
-          </label>
-          <label for="intro">
-            <input type="checkbox" name="intro" id="intro"/>Intro
-          </label>
-          <label for="logitech">
-            <input type="checkbox" name="logitech" id="logitech"/>Logitech
-          </label>
-          <label for="microsoft">
-            <input type="checkbox" name="microsoft" id="microsoft"/>Microsoft
-          </label>
-          <label for="ritmix">
-            <input type="checkbox" name="ritmix" id="ritmix"/>Ritmix
-          </label>
-          <label for="samsung">
-            <input type="checkbox" name="samsung" id="samsung"/>Samsung
-          </label>
-          <label for="sven">
-            <input type="checkbox" name="sven" id="sven"/>Sven
-          </label>
-          <label for="trust">
-            <input type="checkbox" name="trust" id="trust"/>Trust
-          </label>
-        </div>
-        <div class="shop-drop-down resolution">
-          <label for="res1280x1024">
-            <input type="checkbox" name="res1280x1024" id="res1280x1024"/>1280x1024
-          </label>
-          <label for="res1280x720">
-            <input type="checkbox" name="res1280x720" id="res1280x720"/>1280x720
-          </label>
-          <label for="res1280x960">
-            <input type="checkbox" name="res1280x960" id="res1280x960"/>1280x960
-          </label>
-          <label for="res1920x1080">
-            <input type="checkbox" name="res1920x1080" id="res1920x1080"/>1920x1080
-          </label>
-          <label for="res640x480">
-            <input type="checkbox" name="res640x480" id="res640x480"/>640x480
-          </label>
-          <label for="res800x600">
-            <input type="checkbox" name="res800x600" id="res800x600"/>800x600
-          </label>
-        </div>
-        <div class="shop-drop-down option">
-          <label for="speaker">
-            <input type="radio" name="option" id="speaker"/>Микрофон
-          </label>
-          <label for="highlight">
-            <input type="radio" name="option" id="highlight"/>Подсветка
-          </label>
-        </div>
-        <input type="submit" value="ПРИМЕНИТЬ ФИЛЬТР" class="submit-btn"/>
+        <fieldset class="shop-drop-down categories radio">
+          <legend class="dd-header">Категории</legend>
+          <label for="ipcam">IP камеры</label>
+          <input type="radio" name="category" checked="checked" id="ipcam"/>
+          <label for="analogcam">Аналоговые камеры</label>
+          <input type="radio" name="category" id="analogcam"/>
+          <label for="webcam">Web камеры</label>
+          <input type="radio" name="category" id="webcam"/>
+          <label for="dvr">DVR</label>
+          <input type="radio" name="category" id="dvr"/>
+        </fieldset>
+        <fieldset class="shop-drop-down price radio">
+          <legend class="dd-header">Цена</legend>
+          <label for="cheap">1500-2500</label>
+          <input type="radio" name="price" id="cheap"/>
+          <label for="goodprice">2500-5000</label>
+          <input type="radio" name="price" id="goodprice"/>
+          <label for="expensive">5000-10000</label>
+          <input type="radio" name="price" id="expensive"/>
+          <label for="veryexpensive">10000-15000</label>
+          <input type="radio" name="price" id="veryexpensive"/>
+          <label for="any">Любая</label>
+          <input type="radio" name="price" id="any"/>
+        </fieldset>
+        <fieldset class="shop-drop-down producer">
+          <legend class="dd-header">Производитель</legend>
+          <label for="dns">DNS</label>
+          <input type="checkbox" name="dns" id="dns"/>
+          <label for="a4tech">A4Tech</label>
+          <input type="checkbox" name="a4tech" id="a4tech"/>
+          <label for="cbr">CBR</label>
+          <input type="checkbox" name="cbr" id="cbr"/>
+          <label for="defender">Defender</label>
+          <input type="checkbox" name="defender" id="defender"/>
+          <label for="genius">Genius</label>
+          <input type="checkbox" name="genius" id="genius"/>
+          <label for="hercules">Hercules</label>
+          <input type="checkbox" name="hercules" id="hercules"/>
+          <label for="hp">HP</label>
+          <input type="checkbox" name="hp" id="hp"/>
+          <label for="intro">Intro</label>
+          <input type="checkbox" name="intro" id="intro"/>
+          <label for="logitech">Logitech</label>
+          <input type="checkbox" name="logitech" id="logitech"/>
+          <label for="microsoft">Microsoft</label>
+          <input type="checkbox" name="microsoft" id="microsoft"/>
+          <label for="ritmix">Ritmix</label>
+          <input type="checkbox" name="ritmix" id="ritmix"/>
+          <label for="samsung">Samsung</label>
+          <input type="checkbox" name="samsung" id="samsung"/>
+          <label for="sven">Sven</label>
+          <input type="checkbox" name="sven" id="sven"/>
+          <label for="trust">Trust</label>
+          <input type="checkbox" name="trust" id="trust"/>
+        </fieldset>
+        <fieldset class="shop-drop-down resolution">
+          <legend class="dd-header">Разрешения</legend>
+          <label for="res1280x1024">1280x1024</label>
+          <input type="checkbox" name="res1280x1024" id="res1280x1024"/>
+          <label for="res1280x720">1280x720</label>
+          <input type="checkbox" name="res1280x720" id="res1280x720"/>
+          <label for="res1280x960">1280x960</label>
+          <input type="checkbox" name="res1280x960" id="res1280x960"/>
+          <label for="res1920x1080">1920x1080</label>
+          <input type="checkbox" name="res1920x1080" id="res1920x1080"/>
+          <label for="res640x480">640x480</label>
+          <input type="checkbox" name="res640x480" id="res640x480"/>
+          <label for="res800x600">800x600</label>
+          <input type="checkbox" name="res800x600" id="res800x600"/>
+        </fieldset>
+        <fieldset class="shop-drop-down option radio">
+          <legend class="dd-header">Опции</legend>
+          <label for="speaker">Микрофон</label>
+          <input type="radio" name="option" id="speaker"/>
+          <label for="highlight">Подсветка</label>
+          <input type="radio" name="option" id="highlight"/>
+        </fieldset>
+        <div class="creative-stuff"></div>
+        <div class="creative-stuff"></div>
+        <div class="creative-stuff"></div>
+        <input type="submit" value="ПРИМЕНИТЬ ФИЛЬТР" class="btn-md btn-filter centered"/>
       </form>
     </div>
     <div class="show-result-holder">
       <ul class="listitem">
-        <li><img src="" alt=""/>
+        <li class="item"><img src="images/cam-1.png" alt=""/>
           <p class="name">ВЕБ-КАМЕРА</p>
           <p class="article">DNS-0306ABS</p>
           <p class="desc">640x480 (1280x960 с драйверами, USB 2.0)</p>
-          <p class="price">520 Р</p><a href="#">В КОРЗИНУ</a>
+          <p class="price">520 Р</p><a href="#" class="btn-md btn-to-cart centered">В КОРЗИНУ</a>
         </li>
-        <li><img src="" alt=""/>
+        <li class="item"><img src="images/cam-1.png" alt=""/>
           <p class="name">ВЕБ-КАМЕРА</p>
           <p class="article">DNS-0306ABS</p>
           <p class="desc">640x480 (1280x960 с драйверами, USB 2.0)</p>
-          <p class="price">520 Р</p><a href="#">В КОРЗИНУ</a>
+          <p class="price">520 Р</p><a href="#" class="btn-md btn-to-cart centered">В КОРЗИНУ</a>
         </li>
-        <li><img src="" alt=""/>
+        <li class="item"><img src="images/cam-1.png" alt=""/>
           <p class="name">ВЕБ-КАМЕРА</p>
           <p class="article">DNS-0306ABS</p>
           <p class="desc">640x480 (1280x960 с драйверами, USB 2.0)</p>
-          <p class="price">520 Р</p><a href="#">В КОРЗИНУ</a>
+          <p class="price">520 Р</p><a href="#" class="btn-md btn-to-cart centered">В КОРЗИНУ</a>
         </li>
       </ul>
     </div>

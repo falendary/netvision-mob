@@ -3,6 +3,13 @@
 {
 	width: 4rem;
 	height: 4rem;
+	display: block;
+}
+.btn-md
+{
+	height: 3.5rem;
+	width: 15rem;
+	display: block;
 }
 .btn-profile
 {
@@ -61,9 +68,62 @@
 	background-color: $news_all_bg;
 	color: $submit_color;
 	border: 0;
-	height: 3.5rem;
 	display: block;
-	width: 15rem;
+	font-family: "PFDinDisplayPro-Regular";
+	font-size: 1.2rem;
+}
+.btn-show-more
+{
+	text-align: center;
+	font-family: 'PTSansRegular';
+	background: $loadmore_bg;
+	border: 2px solid $loadmore_border;
+	color: $loadmore_color;
+	padding: 1rem;
+	font-size: 1.2rem;
+}
+.btn-back-to-news
+{
+	text-align: center;
+	font-family: 'PTSansRegular';
+	background: $back_to_news_bg;
+	border: 2px solid $back_to_news_border;
+	color: $back_to_news_color;
+	padding: 1rem;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+}
+.btn-filter
+{
+	text-align: center;
+	font-family: 'PTSansRegular';
+	background: $filter_bg;
+	border: 2px solid $filter_border;
+	color: $filter_color;
+	padding: 1rem;
+	font-size: 1.2rem;
+	text-indent: 0;
+	line-height: 1.2rem;
+	display: block;
+}
+.creative-stuff
+{
+	width: .5rem;
+	height: .5rem;
+	border-radius: 50%;
+	background: #41d0ff;
+	margin: 0 auto .5375rem;
+}
+.btn-to-cart
+{
+	background-color: $to_cart_bg;
+	color: $to_cart_color;
+	text-align: center;
+	padding: 1.2rem 0 0 0;
+	border: 0;
+	display: block;
+	font-family: "PFDinDisplayPro-Regular";
+	font-size: 1.2rem;
 }
 .slick-dots
 {
@@ -73,7 +133,6 @@
 	width: 5rem;
 	li
 	{
-		flex-grow: 1;
 		margin-right: .375rem; 
 		float: left;
 		position: relative;

@@ -3,111 +3,126 @@ html
 	head
 		include ./utils/head.jade
 	body
+		include ./utils/header.jade
+		include ./utils/breadcrumbs.jade
 		.shop-holder
 			form(action="").filter
-				.shop-drop-down.categories
+				fieldset.shop-drop-down.categories.radio
+					legend.dd-header
+						|Категории
 					label(for="ipcam")
-						input(type="radio", name="category")#ipcam
 						|IP камеры
+					input(type="radio", name="category", checked="checked")#ipcam
 					label(for="analogcam")
-						input(type="radio", name="category")#analogcam
 						|Аналоговые камеры
+					input(type="radio", name="category")#analogcam
 					label(for="webcam")
-						input(type="radio", name="category")#webcam
 						|Web камеры
+					input(type="radio", name="category")#webcam
 					label(for="dvr")
-						input(type="radio", name="category")#dvr
 						|DVR
-				.shop-drop-down.price
+					input(type="radio", name="category")#dvr
+				fieldset.shop-drop-down.price.radio
+					legend.dd-header
+						|Цена
 					label(for="cheap")
-						input(type="radio", name="price")#cheap
 						|1500-2500
+					input(type="radio", name="price")#cheap
 					label(for="goodprice")
-						input(type="radio", name="price")#goodprice
 						|2500-5000
+					input(type="radio", name="price")#goodprice
 					label(for="expensive")
-						input(type="radio", name="price")#expensive
 						|5000-10000
+					input(type="radio", name="price")#expensive
 					label(for="veryexpensive")
-						input(type="radio", name="price")#veryexpensive
 						|10000-15000
+					input(type="radio", name="price")#veryexpensive
 					label(for="any")
-						input(type="radio", name="price")#any
 						|Любая
-				.shop-drop-down.producer
+					input(type="radio", name="price")#any
+				fieldset.shop-drop-down.producer
+					legend.dd-header
+						|Производитель
 					label(for="dns")
-						input(type="checkbox", name="dns")#dns
 						|DNS
+					input(type="checkbox", name="dns")#dns
 					label(for="a4tech")
-						input(type="checkbox", name="a4tech")#a4tech
 						|A4Tech
+					input(type="checkbox", name="a4tech")#a4tech
 					label(for="cbr")
-						input(type="checkbox", name="cbr")#cbr
 						|CBR
+					input(type="checkbox", name="cbr")#cbr
 					label(for="defender")
-						input(type="checkbox", name="defender")#defender
 						|Defender
+					input(type="checkbox", name="defender")#defender
 					label(for="genius")
-						input(type="checkbox", name="genius")#genius
 						|Genius
+					input(type="checkbox", name="genius")#genius
 					label(for="hercules")
-						input(type="checkbox", name="hercules")#hercules
 						|Hercules
+					input(type="checkbox", name="hercules")#hercules
 					label(for="hp")
-						input(type="checkbox", name="hp")#hp
 						|HP
+					input(type="checkbox", name="hp")#hp
 					label(for="intro")
-						input(type="checkbox", name="intro")#intro
 						|Intro
+					input(type="checkbox", name="intro")#intro
 					label(for="logitech")
-						input(type="checkbox", name="logitech")#logitech
 						|Logitech
+					input(type="checkbox", name="logitech")#logitech
 					label(for="microsoft")
-						input(type="checkbox", name="microsoft")#microsoft
 						|Microsoft
+					input(type="checkbox", name="microsoft")#microsoft
 					label(for="ritmix")
-						input(type="checkbox", name="ritmix")#ritmix
 						|Ritmix
+					input(type="checkbox", name="ritmix")#ritmix
 					label(for="samsung")
-						input(type="checkbox", name="samsung")#samsung
 						|Samsung
+					input(type="checkbox", name="samsung")#samsung
 					label(for="sven")
-						input(type="checkbox", name="sven")#sven
 						|Sven
+					input(type="checkbox", name="sven")#sven
 					label(for="trust")
-						input(type="checkbox", name="trust")#trust
 						|Trust
-				.shop-drop-down.resolution
+					input(type="checkbox", name="trust")#trust
+				fieldset.shop-drop-down.resolution
+					legend.dd-header
+						|Разрешения
 					label(for="res1280x1024")
-						input(type="checkbox", name="res1280x1024")#res1280x1024
 						|1280x1024
+					input(type="checkbox", name="res1280x1024")#res1280x1024
 					label(for="res1280x720")
-						input(type="checkbox", name="res1280x720")#res1280x720
 						|1280x720
+					input(type="checkbox", name="res1280x720")#res1280x720
 					label(for="res1280x960")
-						input(type="checkbox", name="res1280x960")#res1280x960
 						|1280x960
+					input(type="checkbox", name="res1280x960")#res1280x960
 					label(for="res1920x1080")
-						input(type="checkbox", name="res1920x1080")#res1920x1080
 						|1920x1080
+					input(type="checkbox", name="res1920x1080")#res1920x1080
 					label(for="res640x480")
-						input(type="checkbox", name="res640x480")#res640x480
 						|640x480
+					input(type="checkbox", name="res640x480")#res640x480
 					label(for="res800x600")
-						input(type="checkbox", name="res800x600")#res800x600
 						|800x600
-				.shop-drop-down.option
+					input(type="checkbox", name="res800x600")#res800x600
+				fieldset.shop-drop-down.option.radio
+					legend.dd-header
+						|Опции
 					label(for="speaker")
-						input(type="radio", name="option")#speaker
 						|Микрофон
+					input(type="radio", name="option")#speaker
 					label(for="highlight")
-						input(type="radio", name="option")#highlight
 						|Подсветка
-				input(type="submit", value="ПРИМЕНИТЬ ФИЛЬТР", class="submit-btn")
+					input(type="radio", name="option")#highlight
+				.creative-stuff
+				.creative-stuff
+				.creative-stuff
+				input(type="submit", value="ПРИМЕНИТЬ ФИЛЬТР").btn-md.btn-filter.centered
 		.show-result-holder
 			ul.listitem
-				li
-					img(src="", alt="")
+				li.item
+					img(src="images/cam-1.png", alt="")
 					p.name
 						|ВЕБ-КАМЕРА
 					p.article
@@ -116,10 +131,10 @@ html
 						|640x480 (1280x960 с драйверами, USB 2.0)
 					p.price
 						|520 Р
-					a(href="#")
+					a(href="#").btn-md.btn-to-cart.centered
 						|В КОРЗИНУ
-				li
-					img(src="", alt="")
+				li.item
+					img(src="images/cam-1.png", alt="")
 					p.name
 						|ВЕБ-КАМЕРА
 					p.article
@@ -128,10 +143,10 @@ html
 						|640x480 (1280x960 с драйверами, USB 2.0)
 					p.price
 						|520 Р
-					a(href="#")
+					a(href="#").btn-md.btn-to-cart.centered
 						|В КОРЗИНУ
-				li
-					img(src="", alt="")
+				li.item
+					img(src="images/cam-1.png", alt="")
 					p.name
 						|ВЕБ-КАМЕРА
 					p.article
@@ -140,7 +155,7 @@ html
 						|640x480 (1280x960 с драйверами, USB 2.0)
 					p.price
 						|520 Р
-					a(href="#")
+					a(href="#").btn-md.btn-to-cart.centered
 						|В КОРЗИНУ
 		include ./utils/footer.jade
 		include ./utils/scripts.jade

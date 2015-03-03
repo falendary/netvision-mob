@@ -44,6 +44,32 @@ $submit_bg: #41D0FF;
 	// Цвет текста кнопки отправить форму
 $submit_color: #fff;
 
+	// Фон кнопки добавить в корзину
+$to_cart_bg: #0ca1d2;
+	// Цвет текста кнопки добавить в корзину
+$to_cart_color: #fff;
+
+// Фон кнопки показать еще
+$loadmore_bg: #fff;
+	// Цвет текста показать еще
+$loadmore_color: #0ca1d2;
+	// Цвет границы
+$loadmore_border: #0ca1d2;
+
+// Фон кнопки применить фильтр
+$filter_bg: #fff;
+	// Цвет текста показать еще
+$filter_color: #0ca1d2;
+	// Цвет границы
+$filter_border: #0ca1d2;
+
+// Фон кнопки Вернуться к новостям
+$back_to_news_bg: #0ca1d2;
+	// Цвет текста кнопки Вернуться к новостям
+$back_to_news_color: #fff;
+	// Цвет границы кнопки Вернуться к новостям
+$back_to_news_border: #0ca1d2;
+
 // Фон кнопки камеры
 $cam_btn_bg: #47b9e4;
 // Плашка хиты продаж
@@ -111,6 +137,21 @@ $hits_color: #fff;
 	// Нижняя граница хэдера
 	$header_border_bottom: #d9dedf;
 
+	// DROPPED MENU
+
+		// Фон
+		$dropped_menu_bg_default: #0587b2;
+		// При нажатии
+		$dropped_menu_bg_active_default: #41D0FF;
+		// Цвет
+		$dropped_menu_color_default: #fff;
+	
+	// SEARCH FORM
+
+		$dropped_searc_from_bg_default: #134d60;
+		$dropped_searc_from_color_default: #416e88;
+
+
 //////////////BREADCRUMBS////////////
 	
 	// Фон
@@ -130,7 +171,9 @@ $hits_color: #fff;
 //////////////SHOP////////////
 
 $filter_header_bg: #f2f2f2;
+$filter_header_color_default: #6a7d7e;
 $filter_body_bg: #fff;
+$filter_borders: #ebeded;
 
 //////////////INDEX//////////////////
 	
@@ -181,3 +224,40 @@ $news_preview_color: #4b4b4b;
 $news_preview_date_color: #16a5d4;
 	// Нижняя граница у превьюшки
 $news_preview_border_bottom: #e7ebeb;
+
+
+
+/////////////SHOP///////////////////
+
+$item_border_default: #bbcbcc;
+$item_name_default: #1d4958;
+$item_desc_default: #95a5a6;
+$item_price_default: #0ca1d2;
+
+
+/////////////ITEM///////////////////
+
+$item_page_chars_bg_default: #fff;
+$item_page_chars_bg_custom1: #0ca1d2;
+
+$item_page_chars_color_default: #fff;
+$item_page_chars_color_custom1: #0ca1d2;
+$item_page_chars_color_custom2: #748687;
+
+// tabs menu
+$item_page_tabs_bg: #d7dddd;
+$item_page_tabs_border: #d7dddd;
+$item_page_tabs_color: #1d4958;
+
+/////////////SOCIAL///////////////////
+
+$socials_border_default: #d7dddd;
+
+/////////////NEWS-PAGE/////////////////// 
+
+// Цвет заголовока
+$news_page_header_color_default: #1d4958;
+// Цвет контента
+$news_page_content_color_default: #748687;
+// Цвет ссылок в контенте
+$news_page_content_a_color_default: #0ca1d2;
