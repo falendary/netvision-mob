@@ -72,6 +72,38 @@
 	font-family: "PFDinDisplayPro-Regular";
 	font-size: 1.2rem;
 }
+.btn-order
+{
+	background-color: $order_bg;
+	color: $order_color;
+	border: 0;
+	display: block;
+	font-family: "PFDinDisplayPro-Regular";
+	font-size: 1.2rem;
+}
+.rm-from-cart
+{
+	position: relative;
+	background-color: $rm_from_cart_bg;
+	color: $rm_from_cart_color;
+	border: 0;
+	padding: 1.2rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	font-family: "PFDinDisplayPro-Regular";
+	font-size: 1.2rem;
+	&::after
+	{
+		content: "x";
+		position: absolute;
+		display: block;
+		right: 1rem;
+		font-size: 1.5rem;
+		text-transform: lowercase;
+		top: .9rem;
+	}
+}
 .btn-show-more
 {
 	text-align: center;

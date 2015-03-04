@@ -234,7 +234,7 @@ header {
     top: 4rem;
     right: 0;
     height: 4rem;
-    width: 16rem;
+    width: calc(100% - 4rem);
     background: #134d60;
     color: #416e88; }
     header .dropped-search input {
@@ -355,6 +355,34 @@ header {
   font-family: "PFDinDisplayPro-Regular";
   font-size: 1.2rem; }
 
+.btn-order {
+  background-color: #0ca1d1;
+  color: #fff;
+  border: 0;
+  display: block;
+  font-family: "PFDinDisplayPro-Regular";
+  font-size: 1.2rem; }
+
+.rm-from-cart {
+  position: relative;
+  background-color: #0ca1d1;
+  color: #fff;
+  border: 0;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  font-family: "PFDinDisplayPro-Regular";
+  font-size: 1.2rem; }
+  .rm-from-cart::after {
+    content: "x";
+    position: absolute;
+    display: block;
+    right: 1rem;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    top: .9rem; }
+
 .btn-show-more {
   text-align: center;
   font-family: 'PTSansRegular';
@@ -458,6 +486,149 @@ header {
   border-top: .875rem solid transparent;
   border-left: .85rem solid #fff;
   border-bottom: .875rem solid transparent; }
+
+.news-holder {
+  padding: 0 0 2.75rem 0; }
+  .news-holder h1 {
+    text-align: center;
+    margin: 1.5rem 0 2rem 0;
+    font-family: 'PTSansBold';
+    font-size: 1.2rem; }
+  .news-holder .news-list {
+    width: 90%;
+    margin: 0 auto; }
+    .news-holder .news-list .news-preview {
+      margin: 0 0 1.5625rem 0; }
+      .news-holder .news-list .news-preview .preview-img-col {
+        float: left;
+        width: 5.125rem;
+        margin: 0 1rem 0 0; }
+      .news-holder .news-list .news-preview .preview-content-col {
+        float: left;
+        width: calc(100% - 6.125rem);
+        padding: 0 0 2.75rem 0;
+        border-bottom: 1px solid #e7ebeb; }
+        .news-holder .news-list .news-preview .preview-content-col time {
+          display: block;
+          color: #16a5d4;
+          margin: 0 0 .5rem 0; }
+        .news-holder .news-list .news-preview .preview-content-col a {
+          font-family: 'PTSansRegular';
+          line-height: 1.2rem;
+          color: #4b4b4b;
+          text-decoration: underline; }
+      .news-holder .news-list .news-preview::after {
+        content: '';
+        display: block;
+        clear: both; }
+
+.ovservation-holder h1 {
+  text-align: center;
+  width: 11rem;
+  margin: 1.9875rem auto 1.5625rem;
+  font-family: 'PTSansBold';
+  font-size: 1.2rem; }
+.ovservation-holder .observation .item {
+  height: 17.5rem;
+  overflow: hidden; }
+  .ovservation-holder .observation .item .inner-holder {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; }
+    .ovservation-holder .observation .item .inner-holder img {
+      width: 100%; }
+    .ovservation-holder .observation .item .inner-holder figcaption {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 3.5rem;
+      text-align: center;
+      color: #fff;
+      font-family: "PFDinDisplayPro-Regular";
+      bottom: 0;
+      padding: 1rem 0 0 0;
+      font-size: 1.2rem;
+      text-transform: uppercase; }
+.ovservation-holder .observation .slick-prev, .ovservation-holder .observation .slick-next {
+  position: absolute; }
+.ovservation-holder .observation .slick-prev {
+  left: 0;
+  bottom: 50%; }
+.ovservation-holder .observation .slick-next {
+  right: 0;
+  bottom: 50%; }
+.ovservation-holder .observation .slick-dots {
+  margin-left: 1rem; }
+.ovservation-holder .observation.similar .item {
+  height: auto;
+  width: 18rem;
+  padding: 1.5rem;
+  border: 1px solid #bbcbcc;
+  margin: 0 1rem 0 1rem; }
+  .ovservation-holder .observation.similar .item img {
+    height: 12rem;
+    display: block;
+    margin: 0 auto; }
+  .ovservation-holder .observation.similar .item p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "PFDinDisplayPro-Bold"; }
+  .ovservation-holder .observation.similar .item .name {
+    color: #1d4958;
+    margin: 0 0 .2rem 0; }
+  .ovservation-holder .observation.similar .item .article {
+    color: #1d4958;
+    margin: 0 0 .7rem 0; }
+  .ovservation-holder .observation.similar .item .desc {
+    color: #95a5a6;
+    font-family: "PFDinDisplayPro-Regular";
+    margin: 0 0 1.2rem; }
+  .ovservation-holder .observation.similar .item .price {
+    font-family: 'PTSansBold';
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0ca1d2;
+    margin: 0 0 1.2rem 0; }
+  .ovservation-holder .observation.similar .item a.btn-to-cart {
+    text-decoration: none; }
+.ovservation-holder .observation.similar .slick-dots {
+  width: auto; }
+.ovservation-holder .observation.similar::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.socials-holder {
+  padding: 1rem; }
+  .socials-holder .inner-holder {
+    border-top: 1px solid #d7dddd;
+    border-bottom: 1px solid #d7dddd; }
+  .socials-holder ul {
+    padding: 1rem 1rem;
+    width: 18rem;
+    margin: 0 auto; }
+    .socials-holder ul li {
+      float: left; }
+      .socials-holder ul li a {
+        display: block;
+        width: 3.25rem;
+        height: 3.25rem;
+        border-radius: .4rem;
+        margin: 0 .95rem 0 0; }
+      .socials-holder ul li:last-child a {
+        margin: 0; }
+    .socials-holder ul .facebook {
+      background: url(../images/m-soc-icons.png) no-repeat -.5rem -.4rem; }
+    .socials-holder ul .vk {
+      background: url(../images/m-soc-icons.png) no-repeat -6.8rem -.5rem; }
+    .socials-holder ul .twitter {
+      background: url(../images/m-soc-icons.png) no-repeat -13rem -.4rem; }
+    .socials-holder ul .linksoc {
+      background: url(../images/m-soc-icons.png) no-repeat -19rem -.4rem; }
+    .socials-holder ul::after {
+      content: '';
+      display: block;
+      clear: both; }
 
 .form-holder {
   background-color: #0587b2; }
@@ -647,226 +818,78 @@ header {
       .news-page-holder .news-page-content a:visited {
         color: #0ca1d2; }
 
-.news-holder {
-  padding: 0 0 2.75rem 0; }
-  .news-holder h1 {
-    text-align: center;
-    margin: 1.5rem 0 2rem 0;
-    font-family: 'PTSansBold';
-    font-size: 1.2rem; }
-  .news-holder .news-list {
-    width: 90%;
-    margin: 0 auto; }
-    .news-holder .news-list .news-preview {
-      margin: 0 0 1.5625rem 0; }
-      .news-holder .news-list .news-preview .preview-img-col {
-        float: left;
-        width: 5.125rem;
-        margin: 0 1rem 0 0; }
-      .news-holder .news-list .news-preview .preview-content-col {
-        float: left;
-        width: calc(100% - 6.125rem);
-        padding: 0 0 2.75rem 0;
-        border-bottom: 1px solid #e7ebeb; }
-        .news-holder .news-list .news-preview .preview-content-col time {
-          display: block;
-          color: #16a5d4;
-          margin: 0 0 .5rem 0; }
-        .news-holder .news-list .news-preview .preview-content-col a {
-          font-family: 'PTSansRegular';
-          line-height: 1.2rem;
-          color: #4b4b4b;
-          text-decoration: underline; }
-      .news-holder .news-list .news-preview::after {
-        content: '';
-        display: block;
-        clear: both; }
-
-.ovservation-holder h1 {
+.show-cart-holder .intotal {
+  height: 16rem;
+  width: 100%;
+  background: #0ca1d2;
+  color: #fff;
+  margin: 0 0 4.3125rem 0;
+  padding: 2.5rem;
+  font-size: 1.3rem;
   text-align: center;
-  width: 11rem;
-  margin: 1.9875rem auto 1.5625rem;
-  font-family: 'PTSansBold';
-  font-size: 1.2rem; }
-.ovservation-holder .observation .item {
-  height: 17.5rem;
-  overflow: hidden; }
-  .ovservation-holder .observation .item .inner-holder {
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative; }
-    .ovservation-holder .observation .item .inner-holder img {
-      width: 100%; }
-    .ovservation-holder .observation .item .inner-holder figcaption {
-      position: absolute;
-      background: rgba(0, 0, 0, 0.5);
-      width: 100%;
-      height: 3.5rem;
-      text-align: center;
-      color: #fff;
-      font-family: "PFDinDisplayPro-Regular";
-      bottom: 0;
-      padding: 1rem 0 0 0;
-      font-size: 1.2rem;
-      text-transform: uppercase; }
-.ovservation-holder .observation .slick-prev, .ovservation-holder .observation .slick-next {
-  position: absolute; }
-.ovservation-holder .observation .slick-prev {
-  left: 0;
-  bottom: 50%; }
-.ovservation-holder .observation .slick-next {
-  right: 0;
-  bottom: 50%; }
-.ovservation-holder .observation .slick-dots {
-  margin-left: 1rem; }
-.ovservation-holder .observation.similar .item {
-  height: auto;
-  width: 18rem;
-  padding: 1.5rem;
-  border: 1px solid #bbcbcc;
-  margin: 0 1rem 0 1rem; }
-  .ovservation-holder .observation.similar .item img {
-    height: 12rem;
-    display: block;
-    margin: 0 auto; }
-  .ovservation-holder .observation.similar .item p {
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: "PFDinDisplayPro-Bold"; }
-  .ovservation-holder .observation.similar .item .name {
-    color: #1d4958;
-    margin: 0 0 .2rem 0; }
-  .ovservation-holder .observation.similar .item .article {
-    color: #1d4958;
-    margin: 0 0 .7rem 0; }
-  .ovservation-holder .observation.similar .item .desc {
-    color: #95a5a6;
-    font-family: "PFDinDisplayPro-Regular";
-    margin: 0 0 1.2rem; }
-  .ovservation-holder .observation.similar .item .price {
-    font-family: 'PTSansBold';
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #0ca1d2;
-    margin: 0 0 1.2rem 0; }
-  .ovservation-holder .observation.similar .item a.btn-to-cart {
-    text-decoration: none; }
-.ovservation-holder .observation.similar .slick-dots {
-  width: auto; }
-.ovservation-holder .observation.similar::after {
-  content: '';
-  display: block;
-  clear: both; }
-
-.socials-holder {
-  padding: 1rem; }
-  .socials-holder .inner-holder {
-    border-top: 1px solid #d7dddd;
-    border-bottom: 1px solid #d7dddd; }
-  .socials-holder ul {
-    padding: 1rem 1rem;
+  font-family: 'PTSansBold'; }
+  .show-cart-holder .intotal p {
+    margin: 0 0 1rem 0; }
+  .show-cart-holder .intotal .count-holder {
+    margin: 0 0 2.2rem 0;
+    font-size: 2.4rem; }
+  .show-cart-holder .intotal .price-count-holder {
+    border-top: 1px solid #fff;
+    padding: 1rem 0 0 0;
+    font-size: 3.5rem; }
+.show-cart-holder .border-bottom {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #b2c4c5;
+  padding: 0 1rem 2.5rem 1rem; }
+.show-cart-holder .listitem {
+  width: 100%;
+  padding: 0 0 0 1rem; }
+  .show-cart-holder .listitem .item {
     width: 18rem;
-    margin: 0 auto; }
-    .socials-holder ul li {
-      float: left; }
-      .socials-holder ul li a {
-        display: block;
-        width: 3.25rem;
-        height: 3.25rem;
-        border-radius: .4rem;
-        margin: 0 .95rem 0 0; }
-      .socials-holder ul li:last-child a {
-        margin: 0; }
-    .socials-holder ul .facebook {
-      background: url(../images/m-soc-icons.png) no-repeat -.5rem -.4rem; }
-    .socials-holder ul .vk {
-      background: url(../images/m-soc-icons.png) no-repeat -6.8rem -.5rem; }
-    .socials-holder ul .twitter {
-      background: url(../images/m-soc-icons.png) no-repeat -13rem -.4rem; }
-    .socials-holder ul .linksoc {
-      background: url(../images/m-soc-icons.png) no-repeat -19rem -.4rem; }
-    .socials-holder ul::after {
-      content: '';
+    float: left;
+    padding: 1.5rem;
+    border: 1px solid #bbcbcc;
+    margin: 0 2.5rem 3.5rem 0; }
+    .show-cart-holder .listitem .item img {
+      height: 12rem;
       display: block;
-      clear: both; }
-
-.shop-holder .filter {
-  padding: 1rem 2rem 0 2rem; }
-  .shop-holder .filter input[type="radio"], .shop-holder .filter input[type="checkbox"] {
-    display: none; }
-  .shop-holder .filter .shop-drop-down {
-    margin: 0 auto .5rem;
-    width: 100%;
-    border: 1px solid #ebeded;
-    padding: .5rem 0 .5rem 0; }
-    .shop-holder .filter .shop-drop-down label {
-      display: block;
-      padding: 0 0 0 3rem;
-      margin: .8rem 0 .8rem 0; }
-    .shop-holder .filter .shop-drop-down .dd-header {
-      height: 3.375rem;
-      width: 100%;
+      margin: 0 auto; }
+    .show-cart-holder .listitem .item p {
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: "PFDinDisplayPro-Bold"; }
+    .show-cart-holder .listitem .item .name {
+      color: #1d4958;
+      margin: 0 0 .2rem 0; }
+    .show-cart-holder .listitem .item .article {
+      color: #1d4958;
+      margin: 0 0 .7rem 0; }
+    .show-cart-holder .listitem .item .desc {
+      color: #95a5a6;
       font-family: "PFDinDisplayPro-Regular";
-      color: #6a7d7e;
-      text-transform: uppercase;
-      font-size: 1.15rem;
-      padding: 1.2rem 0 0 1.5rem;
-      background: #f2f2f2;
-      border-bottom: 1px solid #ebeded; }
-  .shop-holder .filter .shop-drop-down.categories label, .shop-holder .filter .shop-drop-down.option label, .shop-holder .filter .shop-drop-down.price label {
-    background: url(../images/m-uncheckedradio.png) no-repeat 1.6rem 50%;
-    background-size: 1rem 1rem; }
-  .shop-holder .filter .shop-drop-down.categories label.checked, .shop-holder .filter .shop-drop-down.option label.checked, .shop-holder .filter .shop-drop-down.price label.checked {
-    background: url(../images/m-checkedradio.png) no-repeat 1.6rem 50%;
-    background-size: 1rem 1rem; }
-  .shop-holder .filter .shop-drop-down.producer label, .shop-holder .filter .shop-drop-down.resolution label {
-    background: url(../images/m-uncheckedselect.png) no-repeat 1.6rem 50%;
-    background-size: 1rem 1rem; }
-  .shop-holder .filter .shop-drop-down.producer label.checked, .shop-holder .filter .shop-drop-down.resolution label.checked {
-    background: url(../images/m-checkedselect.png) no-repeat 1.6rem 50%;
-    background-size: 1rem 1rem; }
-
-.show-result-holder {
-  padding: 1rem 1rem 0 1rem; }
-  .show-result-holder .listitem {
-    width: 100%; }
-    .show-result-holder .listitem .item {
-      width: 18rem;
-      float: left;
-      padding: 1.5rem;
-      border: 1px solid #bbcbcc;
-      margin: 0 2.5rem 3.5rem 0; }
-      .show-result-holder .listitem .item img {
-        height: 12rem;
-        display: block;
-        margin: 0 auto; }
-      .show-result-holder .listitem .item p {
-        text-align: center;
-        font-size: 1.2rem;
-        font-family: "PFDinDisplayPro-Bold"; }
-      .show-result-holder .listitem .item .name {
-        color: #1d4958;
-        margin: 0 0 .2rem 0; }
-      .show-result-holder .listitem .item .article {
-        color: #1d4958;
-        margin: 0 0 .7rem 0; }
-      .show-result-holder .listitem .item .desc {
-        color: #95a5a6;
-        font-family: "PFDinDisplayPro-Regular";
-        margin: 0 0 1.2rem; }
-      .show-result-holder .listitem .item .price {
-        font-family: 'PTSansBold';
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: #0ca1d2;
-        margin: 0 0 1.2rem 0; }
-      .show-result-holder .listitem .item a.btn-to-cart {
-        text-decoration: none; }
-    .show-result-holder .listitem::after {
-      content: '';
-      display: block;
-      clear: both; }
-
+      margin: 0 0 1.2rem; }
+    .show-cart-holder .listitem .item .cart-input {
+      border: 0;
+      color: #9c9c9c;
+      text-align: center;
+      width: 15rem;
+      font-size: 1.2rem;
+      padding: 0 0 .5rem 0;
+      border-bottom: 2px solid #0ca1d2;
+      margin: 0 0 2rem 0; }
+    .show-cart-holder .listitem .item .price {
+      font-family: 'PTSansBold';
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #0ca1d2;
+      margin: 0 0 1.2rem 0; }
+    .show-cart-holder .listitem .item a.btn-to-cart {
+      text-decoration: none; }
+  .show-cart-holder .listitem::after {
+    content: '';
+    display: block;
+    clear: both; }
 
 .product-page .ovservation-holder .observation .slick-dots {
   width: 4rem; }
@@ -945,4 +968,82 @@ header {
     display: none; }
     .product-page .tabs-holder .tab-panel.active {
       display: block; }
+
+
+.shop-holder .filter {
+  padding: 1rem 2rem 0 2rem; }
+  .shop-holder .filter input[type="radio"], .shop-holder .filter input[type="checkbox"] {
+    display: none; }
+  .shop-holder .filter .shop-drop-down {
+    margin: 0 auto .5rem;
+    width: 100%;
+    border: 1px solid #ebeded;
+    padding: .5rem 0 .5rem 0; }
+    .shop-holder .filter .shop-drop-down label {
+      display: block;
+      padding: 0 0 0 3rem;
+      margin: .8rem 0 .8rem 0; }
+    .shop-holder .filter .shop-drop-down .dd-header {
+      height: 3.375rem;
+      width: 100%;
+      font-family: "PFDinDisplayPro-Regular";
+      color: #6a7d7e;
+      text-transform: uppercase;
+      font-size: 1.15rem;
+      padding: 1.2rem 0 0 1.5rem;
+      background: #f2f2f2;
+      border-bottom: 1px solid #ebeded; }
+  .shop-holder .filter .shop-drop-down.categories label, .shop-holder .filter .shop-drop-down.option label, .shop-holder .filter .shop-drop-down.price label {
+    background: url(../images/m-uncheckedradio.png) no-repeat 1.6rem 50%;
+    background-size: 1rem 1rem; }
+  .shop-holder .filter .shop-drop-down.categories label.checked, .shop-holder .filter .shop-drop-down.option label.checked, .shop-holder .filter .shop-drop-down.price label.checked {
+    background: url(../images/m-checkedradio.png) no-repeat 1.6rem 50%;
+    background-size: 1rem 1rem; }
+  .shop-holder .filter .shop-drop-down.producer label, .shop-holder .filter .shop-drop-down.resolution label {
+    background: url(../images/m-uncheckedselect.png) no-repeat 1.6rem 50%;
+    background-size: 1rem 1rem; }
+  .shop-holder .filter .shop-drop-down.producer label.checked, .shop-holder .filter .shop-drop-down.resolution label.checked {
+    background: url(../images/m-checkedselect.png) no-repeat 1.6rem 50%;
+    background-size: 1rem 1rem; }
+
+.show-result-holder {
+  padding: 1rem 1rem 0 1rem; }
+  .show-result-holder .listitem {
+    width: 100%; }
+    .show-result-holder .listitem .item {
+      width: 18rem;
+      float: left;
+      padding: 1.5rem;
+      border: 1px solid #bbcbcc;
+      margin: 0 2.5rem 3.5rem 0; }
+      .show-result-holder .listitem .item img {
+        height: 12rem;
+        display: block;
+        margin: 0 auto; }
+      .show-result-holder .listitem .item p {
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: "PFDinDisplayPro-Bold"; }
+      .show-result-holder .listitem .item .name {
+        color: #1d4958;
+        margin: 0 0 .2rem 0; }
+      .show-result-holder .listitem .item .article {
+        color: #1d4958;
+        margin: 0 0 .7rem 0; }
+      .show-result-holder .listitem .item .desc {
+        color: #95a5a6;
+        font-family: "PFDinDisplayPro-Regular";
+        margin: 0 0 1.2rem; }
+      .show-result-holder .listitem .item .price {
+        font-family: 'PTSansBold';
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #0ca1d2;
+        margin: 0 0 1.2rem 0; }
+      .show-result-holder .listitem .item a.btn-to-cart {
+        text-decoration: none; }
+    .show-result-holder .listitem::after {
+      content: '';
+      display: block;
+      clear: both; }
 

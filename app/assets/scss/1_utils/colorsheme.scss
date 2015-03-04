@@ -63,6 +63,20 @@ $filter_color: #0ca1d2;
 	// Цвет границы
 $filter_border: #0ca1d2;
 
+// Фон кнопки Оформить заказ
+$order_bg: #0ca1d1;
+	// Цвет текста Оформить заказ
+$order_color: #fff;
+	// Цвет границы Оформить заказ
+$order_border: #0ca1d2;
+
+// Фон кнопки Оформить заказ
+$rm_from_cart_bg: #0ca1d1;
+	// Цвет текста Оформить заказ
+$rm_from_cart_color: #fff;
+	// Цвет границы Оформить заказ
+$rm_from_cart_border: #0ca1d2;
+
 // Фон кнопки Вернуться к новостям
 $back_to_news_bg: #0ca1d2;
 	// Цвет текста кнопки Вернуться к новостям
@@ -261,3 +275,9 @@ $news_page_header_color_default: #1d4958;
 $news_page_content_color_default: #748687;
 // Цвет ссылок в контенте
 $news_page_content_a_color_default: #0ca1d2;
+
+/////////////CART///////////////////
+
+$cart_intotal_bg_default: #0ca1d2;
+
+$cart_intotal_color_default: #fff;

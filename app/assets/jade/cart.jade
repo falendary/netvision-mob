@@ -1,0 +1,60 @@
+doctype html5
+html
+	head
+		include ./utils/head.jade
+	body
+		include ./utils/header.jade
+		include ./utils/breadcrumbs.jade
+		.show-cart-holder
+			form(action="#")
+				ul.listitem
+					li.item
+						img(src="images/cam-1.png", alt="")
+						p.name
+							|ВЕБ-КАМЕРА
+						p.article
+							|DNS-0306ABS
+						p.desc
+							|640x480 (1280x960 с драйверами, USB 2.0)
+						p.price
+							|520 Р
+						input(type="text", value="1").cart-input
+						a(href="#").btn-md.rm-from-cart.centered
+							|УДАЛИТЬ ТОВАР
+					li.item
+						img(src="images/cam-1.png", alt="")
+						p.name
+							|ВЕБ-КАМЕРА
+						p.article
+							|DNS-0306ABS
+						p.desc
+							|640x480 (1280x960 с драйверами, USB 2.0)
+						p.price
+							|520 Р
+						input(type="text", value="1").cart-input
+						a(href="#").btn-md.rm-from-cart.centered
+							|УДАЛИТЬ ТОВАР
+					li.item
+						img(src="images/cam-1.png", alt="")
+						p.name
+							|ВЕБ-КАМЕРА
+						p.article
+							|DNS-0306ABS
+						p.desc
+							|640x480 (1280x960 с драйверами, USB 2.0)
+						p.price
+							|520 Р
+						input(type="text", value="1").cart-input
+						a(href="#").btn-md.rm-from-cart.centered
+							|УДАЛИТЬ ТОВАР
+				.intotal
+					p
+						|В корзине:
+					.count-holder
+						|3 товара
+					.price-count-holder
+						|15 000 Р
+				.border-bottom
+					input(type="submit", value="ОФОРМИТЬ ЗАКАЗ").btn-md.btn-order.centered
+		include ./utils/footer.jade
+		include ./utils/scripts.jade

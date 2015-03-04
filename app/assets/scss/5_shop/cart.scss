@@ -1,0 +1,109 @@
+@import "../1_utils/colorsheme.scss";
+@import "../1_utils/mixins.scss";
+.show-cart-holder
+{
+	.intotal
+	{
+		height: 16rem;
+		width: 100%;
+		background: $cart_intotal_bg_default;
+		color: $cart_intotal_color_default;
+		margin: 0 0 4.3125rem 0;
+		padding: 2.5rem;
+		font-size: 1.3rem;
+		text-align: center;
+		font-family: 'PTSansBold';
+		p
+		{
+			margin: 0 0 1rem 0;
+		}
+		.count-holder
+		{
+			margin: 0 0 2.2rem 0;
+			font-size: 2.4rem;
+		}
+		.price-count-holder
+		{
+			border-top: 1px solid #fff;
+			padding: 1rem 0 0 0;
+			font-size: 3.5rem;
+		}
+	}
+	.border-bottom
+	{
+		width: 90%;
+		margin: 0 auto;
+		border-bottom: 1px solid #b2c4c5;
+		padding: 0 1rem 2.5rem 1rem;
+	}
+	.listitem
+	{
+		width: 100%;
+		padding: 0 0 0 1rem;
+		// Нужно закинуть в миксин, лень апатия
+		.item
+		{
+			width: 18rem;
+			float: left;
+			padding: 1.5rem;
+			border: 1px solid $item_border_default;
+			margin: 0 2.5rem 3.5rem 0;
+			img
+			{
+				height: 12rem;
+				display: block;
+				margin: 0 auto;
+			}
+			p
+			{
+				text-align: center;
+				font-size: 1.2rem;
+				font-family: "PFDinDisplayPro-Bold";
+			}
+			.name
+			{
+				color: $item_name_default;
+				
+				margin: 0 0 .2rem 0;
+			}
+			.article
+			{
+				color: $item_name_default;
+				margin: 0 0 .7rem 0;
+			}
+			.desc
+			{
+				color: $item_desc_default;
+				font-family: "PFDinDisplayPro-Regular";
+				margin: 0 0 1.2rem;
+			}
+			.cart-input
+			{
+				border: 0;
+				color: #9c9c9c;
+				text-align: center;
+				width: 15rem;
+				font-size: 1.2rem;
+				padding: 0 0 .5rem 0;
+				border-bottom: 2px solid #0ca1d2;
+				margin: 0 0 2rem 0;
+			}
+			.price
+			{
+				font-family: 'PTSansBold';
+				font-size: 1.8rem;
+				font-weight: bold;
+				color: $item_price_default;
+				margin: 0 0 1.2rem 0;
+			}
+			a.btn-to-cart
+			{
+				text-decoration: none;
+			}
+		}
+		&::after
+		{
+			@include clear();
+		}
+	}
+}
