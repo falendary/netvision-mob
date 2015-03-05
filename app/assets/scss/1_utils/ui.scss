@@ -63,6 +63,12 @@
 	font-size: 1.3rem;
 	font-family: "PFDinDisplayPro-Regular";
 }
+.btn-back-to
+{
+	margin-top: 1.5rem;
+	background: $back_to_btn_bg url(../images/m-back-to-icon.png) no-repeat 50% 50%;
+	background-size: 2rem;
+}
 .btn-submit
 {
 	background-color: $news_all_bg;

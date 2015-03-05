@@ -1,0 +1,63 @@
+@import "../1_utils/colorsheme.scss";
+@import "../1_utils/mixins.scss";
+.search-holder
+{
+	padding: 0 0 2.75rem 0;
+	h1
+	{
+		text-align: center;
+		margin: 1.5rem 0 2rem 0;
+		font-family: 'PTSansBold';
+		font-size: 1.2rem;
+	}
+	.border-bottom
+	{
+		width: 90%;
+		margin: 0 auto;
+		border-bottom: 1px solid #b2c4c5;
+		padding: 0 1rem 2.5rem 1rem;
+	}
+	.search-list
+	{
+		width: 90%;
+		margin: 0 auto;
+		.search-preview
+		{
+			margin: 0 0 1.5625rem 0;
+			padding: 1.5rem 0 0 0;
+			position: relative;
+			time
+			{
+				top: 0;
+				position: absolute;
+				display: block;
+				color: $news_preview_date_color;
+				margin: 0 0 .5rem 0;
+			}	
+			.preview-img-col
+			{
+				float: left;
+				width: 5.125rem;
+				margin: 0 1rem 0 0;
+			}
+			.preview-content-col
+			{
+				display: inline;
+				padding: 0 0 2.75rem 0;
+				border-bottom: 1px solid $news_preview_border_bottom;
+				
+				a
+				{
+					font-family: 'PTSansRegular';
+					line-height: 1.2rem;
+					color: $news_preview_color;
+					text-decoration: underline;
+				}
+			}
+			&::after
+			{
+				@include clear();
+			}
+		}
+	}
+}

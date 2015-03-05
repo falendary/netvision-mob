@@ -1,0 +1,81 @@
+@import "./colorsheme.scss";
+@import "./mixins.scss";
+.form-holder.order
+{
+	background: #fff;
+	form
+	{
+		width: 100%;
+		.btn-submit
+		{
+			background: #41d0ff;
+		}
+	}
+	.blue-bg
+	{
+		width: 100%;
+		padding: 1rem 1.5rem 0 1.5rem;
+		background: #0587b2;
+		height: 26.75rem;
+		margin: 0 0 1.5rem 0;
+		.callback
+		{
+			color: #fff;
+			font-family: "PFDinDisplayPro-Regular";
+			font-size: 1.1rem;
+			line-height: 3.6rem;
+			&::before
+			{
+				display: block;
+				content: '';
+				margin: 0 .5rem 0 0;
+				height: 3.5rem;
+				float: left;
+				width: 3.5rem;
+				background: #0ca1d2 url(../images/m-okay-call.png) no-repeat 50% 50%;
+				background-size: 1.5rem;
+				border-radius: 50%;
+			}
+			&::after
+			{
+				@include clear();
+			}
+		}
+	}
+	.border-bottom
+	{
+		width: 90%;
+		margin: 0 auto;
+		border-bottom: 1px solid #b2c4c5;
+		padding: 0 1rem 2.5rem 1rem;
+	}
+}
+.captcha-holder
+{
+	margin: 0 0 1rem 0;
+	input[type="text"].captcha-input
+	{
+		width: calc(100% - 7.09rem);
+		height: 3.5rem;
+		margin: 0 .09rem 0 0;
+		float: left;
+	}
+	.captcha
+	{
+		width: 7rem;
+		display: block;
+		float: left;
+		height: 3.5rem;
+		background: #fff;
+		overflow: hidden;
+		img
+		{
+			height: 3.5rem;
+			width: 7rem;
+		}
+	}
+	&::after
+	{
+		@include clear();
+	}
+}

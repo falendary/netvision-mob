@@ -8,113 +8,118 @@ html
 		.shop-holder
 			form(action="").filter
 				fieldset.shop-drop-down.categories.radio
-					legend.dd-header
+					a(href="#").dd-header.active
 						|Категории
-					label(for="ipcam")
-						|IP камеры
-					input(type="radio", name="category", checked="checked")#ipcam
-					label(for="analogcam")
-						|Аналоговые камеры
-					input(type="radio", name="category")#analogcam
-					label(for="webcam")
-						|Web камеры
-					input(type="radio", name="category")#webcam
-					label(for="dvr")
-						|DVR
-					input(type="radio", name="category")#dvr
+					.drop-holder
+						label(for="ipcam")
+							|IP камеры
+						input(type="radio", name="category", checked="checked")#ipcam
+						label(for="analogcam")
+							|Аналоговые камеры
+						input(type="radio", name="category")#analogcam
+						label(for="webcam")
+							|Web камеры
+						input(type="radio", name="category")#webcam
+						label(for="dvr")
+							|DVR
+						input(type="radio", name="category")#dvr
 				fieldset.shop-drop-down.price.radio
-					legend.dd-header
+					a(href="#").dd-header.active
 						|Цена
-					label(for="cheap")
-						|1500-2500
-					input(type="radio", name="price")#cheap
-					label(for="goodprice")
-						|2500-5000
-					input(type="radio", name="price")#goodprice
-					label(for="expensive")
-						|5000-10000
-					input(type="radio", name="price")#expensive
-					label(for="veryexpensive")
-						|10000-15000
-					input(type="radio", name="price")#veryexpensive
-					label(for="any")
-						|Любая
-					input(type="radio", name="price")#any
+					.drop-holder
+						label(for="cheap")
+							|1500-2500
+						input(type="radio", name="price")#cheap
+						label(for="goodprice")
+							|2500-5000
+						input(type="radio", name="price")#goodprice
+						label(for="expensive")
+							|5000-10000
+						input(type="radio", name="price")#expensive
+						label(for="veryexpensive")
+							|10000-15000
+						input(type="radio", name="price")#veryexpensive
+						label(for="any")
+							|Любая
+						input(type="radio", name="price")#any
 				fieldset.shop-drop-down.producer
-					legend.dd-header
+					a(href="#").dd-header.active
 						|Производитель
-					label(for="dns")
-						|DNS
-					input(type="checkbox", name="dns")#dns
-					label(for="a4tech")
-						|A4Tech
-					input(type="checkbox", name="a4tech")#a4tech
-					label(for="cbr")
-						|CBR
-					input(type="checkbox", name="cbr")#cbr
-					label(for="defender")
-						|Defender
-					input(type="checkbox", name="defender")#defender
-					label(for="genius")
-						|Genius
-					input(type="checkbox", name="genius")#genius
-					label(for="hercules")
-						|Hercules
-					input(type="checkbox", name="hercules")#hercules
-					label(for="hp")
-						|HP
-					input(type="checkbox", name="hp")#hp
-					label(for="intro")
-						|Intro
-					input(type="checkbox", name="intro")#intro
-					label(for="logitech")
-						|Logitech
-					input(type="checkbox", name="logitech")#logitech
-					label(for="microsoft")
-						|Microsoft
-					input(type="checkbox", name="microsoft")#microsoft
-					label(for="ritmix")
-						|Ritmix
-					input(type="checkbox", name="ritmix")#ritmix
-					label(for="samsung")
-						|Samsung
-					input(type="checkbox", name="samsung")#samsung
-					label(for="sven")
-						|Sven
-					input(type="checkbox", name="sven")#sven
-					label(for="trust")
-						|Trust
-					input(type="checkbox", name="trust")#trust
+					.drop-holder
+						label(for="dns")
+							|DNS
+						input(type="checkbox", name="dns")#dns
+						label(for="a4tech")
+							|A4Tech
+						input(type="checkbox", name="a4tech")#a4tech
+						label(for="cbr")
+							|CBR
+						input(type="checkbox", name="cbr")#cbr
+						label(for="defender")
+							|Defender
+						input(type="checkbox", name="defender")#defender
+						label(for="genius")
+							|Genius
+						input(type="checkbox", name="genius")#genius
+						label(for="hercules")
+							|Hercules
+						input(type="checkbox", name="hercules")#hercules
+						label(for="hp")
+							|HP
+						input(type="checkbox", name="hp")#hp
+						label(for="intro")
+							|Intro
+						input(type="checkbox", name="intro")#intro
+						label(for="logitech")
+							|Logitech
+						input(type="checkbox", name="logitech")#logitech
+						label(for="microsoft")
+							|Microsoft
+						input(type="checkbox", name="microsoft")#microsoft
+						label(for="ritmix")
+							|Ritmix
+						input(type="checkbox", name="ritmix")#ritmix
+						label(for="samsung")
+							|Samsung
+						input(type="checkbox", name="samsung")#samsung
+						label(for="sven")
+							|Sven
+						input(type="checkbox", name="sven")#sven
+						label(for="trust")
+							|Trust
+						input(type="checkbox", name="trust")#trust
 				fieldset.shop-drop-down.resolution
-					legend.dd-header
+					a(href="#").dd-header.active
 						|Разрешения
-					label(for="res1280x1024")
-						|1280x1024
-					input(type="checkbox", name="res1280x1024")#res1280x1024
-					label(for="res1280x720")
-						|1280x720
-					input(type="checkbox", name="res1280x720")#res1280x720
-					label(for="res1280x960")
-						|1280x960
-					input(type="checkbox", name="res1280x960")#res1280x960
-					label(for="res1920x1080")
-						|1920x1080
-					input(type="checkbox", name="res1920x1080")#res1920x1080
-					label(for="res640x480")
-						|640x480
-					input(type="checkbox", name="res640x480")#res640x480
-					label(for="res800x600")
-						|800x600
-					input(type="checkbox", name="res800x600")#res800x600
+					.drop-holder
+						label(for="res1280x1024")
+							|1280x1024
+						input(type="checkbox", name="res1280x1024")#res1280x1024
+						label(for="res1280x720")
+							|1280x720
+						input(type="checkbox", name="res1280x720")#res1280x720
+						label(for="res1280x960")
+							|1280x960
+						input(type="checkbox", name="res1280x960")#res1280x960
+						label(for="res1920x1080")
+							|1920x1080
+						input(type="checkbox", name="res1920x1080")#res1920x1080
+						label(for="res640x480")
+							|640x480
+						input(type="checkbox", name="res640x480")#res640x480
+						label(for="res800x600")
+							|800x600
+						input(type="checkbox", name="res800x600")#res800x600
 				fieldset.shop-drop-down.option.radio
-					legend.dd-header
+					a(href="#").dd-header.active
 						|Опции
-					label(for="speaker")
-						|Микрофон
-					input(type="radio", name="option")#speaker
-					label(for="highlight")
-						|Подсветка
-					input(type="radio", name="option")#highlight
+					.drop-holder
+						label(for="speaker")
+							|Микрофон
+						input(type="radio", name="option")#speaker
+						label(for="highlight")
+							|Подсветка
+						input(type="radio", name="option")#highlight
 				.creative-stuff
 				.creative-stuff
 				.creative-stuff

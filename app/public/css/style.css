@@ -210,6 +210,65 @@ footer {
         font-family: "PFDinDisplayPro-Regular";
         font-size: .69rem; }
 
+.form-holder.order {
+  background: #fff; }
+  .form-holder.order form {
+    width: 100%; }
+    .form-holder.order form .btn-submit {
+      background: #41d0ff; }
+  .form-holder.order .blue-bg {
+    width: 100%;
+    padding: 1rem 1.5rem 0 1.5rem;
+    background: #0587b2;
+    height: 26.75rem;
+    margin: 0 0 1.5rem 0; }
+    .form-holder.order .blue-bg .callback {
+      color: #fff;
+      font-family: "PFDinDisplayPro-Regular";
+      font-size: 1.1rem;
+      line-height: 3.6rem; }
+      .form-holder.order .blue-bg .callback::before {
+        display: block;
+        content: '';
+        margin: 0 .5rem 0 0;
+        height: 3.5rem;
+        float: left;
+        width: 3.5rem;
+        background: #0ca1d2 url(../images/m-okay-call.png) no-repeat 50% 50%;
+        background-size: 1.5rem;
+        border-radius: 50%; }
+      .form-holder.order .blue-bg .callback::after {
+        content: '';
+        display: block;
+        clear: both; }
+  .form-holder.order .border-bottom {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #b2c4c5;
+    padding: 0 1rem 2.5rem 1rem; }
+
+.captcha-holder {
+  margin: 0 0 1rem 0; }
+  .captcha-holder input[type="text"].captcha-input {
+    width: calc(100% - 7.09rem);
+    height: 3.5rem;
+    margin: 0 .09rem 0 0;
+    float: left; }
+  .captcha-holder .captcha {
+    width: 7rem;
+    display: block;
+    float: left;
+    height: 3.5rem;
+    background: #fff;
+    overflow: hidden; }
+    .captcha-holder .captcha img {
+      height: 3.5rem;
+      width: 7rem; }
+  .captcha-holder::after {
+    content: '';
+    display: block;
+    clear: both; }
+
 header {
   position: relative;
   background-color: #0ca1d2; }
@@ -346,6 +405,11 @@ header {
   display: block;
   font-size: 1.3rem;
   font-family: "PFDinDisplayPro-Regular"; }
+
+.btn-back-to {
+  margin-top: 1.5rem;
+  background: #0ca1d2 url(../images/m-back-to-icon.png) no-repeat 50% 50%;
+  background-size: 2rem; }
 
 .btn-submit {
   background-color: #0ca1d2;
@@ -597,6 +661,49 @@ header {
   content: '';
   display: block;
   clear: both; }
+
+.search-holder {
+  padding: 0 0 2.75rem 0; }
+  .search-holder h1 {
+    text-align: center;
+    margin: 1.5rem 0 2rem 0;
+    font-family: 'PTSansBold';
+    font-size: 1.2rem; }
+  .search-holder .border-bottom {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #b2c4c5;
+    padding: 0 1rem 2.5rem 1rem; }
+  .search-holder .search-list {
+    width: 90%;
+    margin: 0 auto; }
+    .search-holder .search-list .search-preview {
+      margin: 0 0 1.5625rem 0;
+      padding: 1.5rem 0 0 0;
+      position: relative; }
+      .search-holder .search-list .search-preview time {
+        top: 0;
+        position: absolute;
+        display: block;
+        color: #16a5d4;
+        margin: 0 0 .5rem 0; }
+      .search-holder .search-list .search-preview .preview-img-col {
+        float: left;
+        width: 5.125rem;
+        margin: 0 1rem 0 0; }
+      .search-holder .search-list .search-preview .preview-content-col {
+        display: inline;
+        padding: 0 0 2.75rem 0;
+        border-bottom: 1px solid #e7ebeb; }
+        .search-holder .search-list .search-preview .preview-content-col a {
+          font-family: 'PTSansRegular';
+          line-height: 1.2rem;
+          color: #4b4b4b;
+          text-decoration: underline; }
+      .search-holder .search-list .search-preview::after {
+        content: '';
+        display: block;
+        clear: both; }
 
 .socials-holder {
   padding: 1rem; }
@@ -977,22 +1084,47 @@ header {
   .shop-holder .filter .shop-drop-down {
     margin: 0 auto .5rem;
     width: 100%;
-    border: 1px solid #ebeded;
-    padding: .5rem 0 .5rem 0; }
+    border: 1px solid #ebeded; }
+    .shop-holder .filter .shop-drop-down .drop-holder {
+      padding: .8rem 0 0 0; }
     .shop-holder .filter .shop-drop-down label {
       display: block;
       padding: 0 0 0 3rem;
       margin: .8rem 0 .8rem 0; }
+      .shop-holder .filter .shop-drop-down label:first-of-type {
+        margin-top: 0; }
     .shop-holder .filter .shop-drop-down .dd-header {
       height: 3.375rem;
       width: 100%;
+      display: block;
+      position: relative;
       font-family: "PFDinDisplayPro-Regular";
       color: #6a7d7e;
       text-transform: uppercase;
       font-size: 1.15rem;
-      padding: 1.2rem 0 0 1.5rem;
+      text-decoration: none;
+      padding: 1.2rem 0 0 2rem;
       background: #f2f2f2;
       border-bottom: 1px solid #ebeded; }
+      .shop-holder .filter .shop-drop-down .dd-header::before {
+        position: absolute;
+        left: .8rem;
+        top: 1.2rem;
+        display: block;
+        width: 0;
+        content: '';
+        height: 0;
+        border-top: .4rem solid transparent;
+        border-left: .5rem solid #0f4a5d;
+        border-bottom: .4rem solid transparent; }
+    .shop-holder .filter .shop-drop-down .dd-header.active:before {
+      left: .6rem;
+      top: 1.35rem;
+      width: 0;
+      height: 0;
+      border-left: .4rem solid transparent;
+      border-right: .4rem solid transparent;
+      border-top: .5rem solid #0f4a5d; }
   .shop-holder .filter .shop-drop-down.categories label, .shop-holder .filter .shop-drop-down.option label, .shop-holder .filter .shop-drop-down.price label {
     background: url(../images/m-uncheckedradio.png) no-repeat 1.6rem 50%;
     background-size: 1rem 1rem; }

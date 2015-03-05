@@ -38,6 +38,11 @@ jQuery(document).ready(() ->
 		console.log('test')
 		jQuery(this).removeClass('active')
 	)
+	# Кнопки фильтров
+	jQuery('.dd-header').bind("touchstart", () ->
+		jQuery(this).toggleClass('active')
+		jQuery(this).siblings('.drop-holder').toggle()
+	)
 	# Логика для радиокнопок фильтра в магазине, в мобильной версии не работаю селекты ~ и + поэтому пришлось js писать
 	jQuery('.shop-drop-down.radio').each(()->
 		_parent = jQuery(this)

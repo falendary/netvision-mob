@@ -14,24 +14,61 @@
 			margin: 0 auto .5rem;
 			width: 100%;
 			border: 1px solid $filter_borders;
-			padding: .5rem 0 .5rem 0;
+			.drop-holder
+			{
+				padding: .8rem 0 0 0;
+			}
 			label
 			{
 				display: block;
 				padding: 0 0 0 3rem;
 				margin: .8rem 0 .8rem 0;
+				&:first-of-type
+				{
+					margin-top: 0;
+				}
 			}
 			.dd-header
 			{
 				height: 3.375rem;
 				width: 100%;
+				display: block;
+				position: relative;
 				font-family: "PFDinDisplayPro-Regular";
 				color: $filter_header_color_default;
 				text-transform: uppercase;
 				font-size: 1.15rem;
-				padding: 1.2rem 0 0 1.5rem;
+				text-decoration: none;
+				padding: 1.2rem 0 0 2rem;
 				background: $filter_header_bg;
 				border-bottom: 1px solid $filter_borders;
+
+				&::before
+				{
+					position: absolute;
+					left: .8rem;
+					top: 1.2rem;
+					display: block;
+					width: 0;
+					content: '';
+				    height: 0;
+				    border-top: .4rem solid transparent;
+				    border-left: .5rem solid #0f4a5d;
+				    border-bottom: .4rem solid transparent;
+				}
+			}
+			.dd-header.active
+			{
+				&:before
+				{
+					left: .6rem;
+					top: 1.35rem;
+					width: 0;
+				    height: 0;
+				    border-left: .4rem solid transparent;
+				    border-right: .4rem solid transparent;
+				    border-top: .5rem solid #0f4a5d;
+				}
 			}
 		}
 		.shop-drop-down.categories, .shop-drop-down.option, .shop-drop-down.price

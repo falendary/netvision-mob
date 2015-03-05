@@ -1,0 +1,26 @@
+doctype html5
+html
+	head
+		include ./utils/head.jade
+	body
+		include ./utils/header.jade
+		include ./utils/breadcrumbs.jade
+		a(href="index.html").btn.btn-back-to.centered
+		.form-holder.order
+			form(action="")
+				.blue-bg
+					h1.form-header
+						|ОФОРМЛЕНИЕ ЗАКАЗА
+					input(type="text", placeholder="Иван Петров")
+					input(type="text", placeholder="+7 (910) 234-45-45")
+					input(type="email", placeholder="somebody@gmail.com")
+					.captcha-holder
+						input(type="text", placeholder="капча").captcha-input
+						a(href="#").captcha
+							img(src="images/m-captcha-example.png", alt="captchacode")
+					p.callback
+						|заказать обратный звонок
+				.border-bottom
+					input(type="submit", value="ОТПРАВИТЬ").btn-md.btn-submit.centered
+		include ./utils/footer.jade
+		include ./utils/scripts.jade
